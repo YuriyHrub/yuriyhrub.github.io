@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge"> <!-- special for IE -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Site Description............."> <!-- maxLength = 150 -->
+  <title>Piroll Dessign</title> <!-- maxLength = 65 -->
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:500,600,700|Nunito+Sans">
+  <link rel="stylesheet" href="assets/styles/normalize.min.css">
+  <link rel="stylesheet" href="assets/styles/style.min.css">
+  
+  <!-- If IE < 9 version -->
+  <!--[if IE]>
+    
+    If need html5shiv.js;
+    If need respond.js;
+  <![endif]-->
+</head>
+<body>
+  <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+      <symbol id="icon-facebook" viewBox="0 0 19 32">
+        <path class="path1" d="M17.125 0.214v4.714h-2.804q-1.536 0-2.071 0.643t-0.536 1.929v3.375h5.232l-0.696 5.286h-4.536v13.554h-5.464v-13.554h-4.554v-5.286h4.554v-3.893q0-3.321 1.857-5.152t4.946-1.83q2.625 0 4.071 0.214z"></path>
+      </symbol>
+      <symbol id="icon-dribble" viewBox="0 0 27 32">
+        <path class="path1" d="M18.286 26.786q-0.75-4.304-2.5-8.893h-0.036l-0.036 0.018q-0.286 0.107-0.768 0.295t-1.804 0.875-2.446 1.464-2.339 2.045-1.839 2.643l-0.268-0.196q3.286 2.679 7.464 2.679 2.357 0 4.571-0.929zM14.982 15.946q-0.375-0.875-0.946-1.982-5.554 1.661-12.018 1.661-0.018 0.125-0.018 0.375 0 2.214 0.786 4.223t2.214 3.598q0.893-1.589 2.205-2.973t2.545-2.223 2.33-1.446 1.777-0.857l0.661-0.232q0.071-0.018 0.232-0.063t0.232-0.080zM13.071 12.161q-2.143-3.804-4.357-6.75-2.464 1.161-4.179 3.321t-2.286 4.857q5.393 0 10.821-1.429zM25.286 17.857q-3.75-1.071-7.304-0.518 1.554 4.268 2.286 8.375 1.982-1.339 3.304-3.384t1.714-4.473zM10.911 4.625q-0.018 0-0.036 0.018 0.018-0.018 0.036-0.018zM21.446 7.214q-3.304-2.929-7.732-2.929-1.357 0-2.768 0.339 2.339 3.036 4.393 6.821 1.232-0.464 2.321-1.080t1.723-1.098 1.17-1.018 0.67-0.723zM25.429 15.875q-0.054-4.143-2.661-7.321l-0.018 0.018q-0.161 0.214-0.339 0.438t-0.777 0.795-1.268 1.080-1.786 1.161-2.348 1.152q0.446 0.946 0.786 1.696 0.036 0.107 0.116 0.313t0.134 0.295q0.643-0.089 1.33-0.125t1.313-0.036 1.232 0.027 1.143 0.071 1.009 0.098 0.857 0.116 0.652 0.107 0.446 0.080zM27.429 16q0 3.732-1.839 6.884t-4.991 4.991-6.884 1.839-6.884-1.839-4.991-4.991-1.839-6.884 1.839-6.884 4.991-4.991 6.884-1.839 6.884 1.839 4.991 4.991 1.839 6.884z"></path>
+      </symbol>
+      <symbol id="icon-twitter" viewBox="0 0 30 32">
+        <path class="path1" d="M28.929 7.286q-1.196 1.75-2.893 2.982 0.018 0.25 0.018 0.75 0 2.321-0.679 4.634t-2.063 4.437-3.295 3.759-4.607 2.607-5.768 0.973q-4.839 0-8.857-2.589 0.625 0.071 1.393 0.071 4.018 0 7.161-2.464-1.875-0.036-3.357-1.152t-2.036-2.848q0.589 0.089 1.089 0.089 0.768 0 1.518-0.196-2-0.411-3.313-1.991t-1.313-3.67v-0.071q1.214 0.679 2.607 0.732-1.179-0.786-1.875-2.054t-0.696-2.75q0-1.571 0.786-2.911 2.161 2.661 5.259 4.259t6.634 1.777q-0.143-0.679-0.143-1.321 0-2.393 1.688-4.080t4.080-1.688q2.5 0 4.214 1.821 1.946-0.375 3.661-1.393-0.661 2.054-2.536 3.179 1.661-0.179 3.321-0.893z"></path>
+      </symbol>
+      <symbol id="icon-instagram" viewBox="0 0 27 32">
+        <path class="path1" d="M18.286 16q0-1.893-1.339-3.232t-3.232-1.339-3.232 1.339-1.339 3.232 1.339 3.232 3.232 1.339 3.232-1.339 1.339-3.232zM20.75 16q0 2.929-2.054 4.982t-4.982 2.054-4.982-2.054-2.054-4.982 2.054-4.982 4.982-2.054 4.982 2.054 2.054 4.982zM22.679 8.679q0 0.679-0.482 1.161t-1.161 0.482-1.161-0.482-0.482-1.161 0.482-1.161 1.161-0.482 1.161 0.482 0.482 1.161zM13.714 4.75q-0.125 0-1.366-0.009t-1.884 0-1.723 0.054-1.839 0.179-1.277 0.33q-0.893 0.357-1.571 1.036t-1.036 1.571q-0.196 0.518-0.33 1.277t-0.179 1.839-0.054 1.723 0 1.884 0.009 1.366-0.009 1.366 0 1.884 0.054 1.723 0.179 1.839 0.33 1.277q0.357 0.893 1.036 1.571t1.571 1.036q0.518 0.196 1.277 0.33t1.839 0.179 1.723 0.054 1.884 0 1.366-0.009 1.366 0.009 1.884 0 1.723-0.054 1.839-0.179 1.277-0.33q0.893-0.357 1.571-1.036t1.036-1.571q0.196-0.518 0.33-1.277t0.179-1.839 0.054-1.723 0-1.884-0.009-1.366 0.009-1.366 0-1.884-0.054-1.723-0.179-1.839-0.33-1.277q-0.357-0.893-1.036-1.571t-1.571-1.036q-0.518-0.196-1.277-0.33t-1.839-0.179-1.723-0.054-1.884 0-1.366 0.009zM27.429 16q0 4.089-0.089 5.661-0.179 3.714-2.214 5.75t-5.75 2.214q-1.571 0.089-5.661 0.089t-5.661-0.089q-3.714-0.179-5.75-2.214t-2.214-5.75q-0.089-1.571-0.089-5.661t0.089-5.661q0.179-3.714 2.214-5.75t5.75-2.214q1.571-0.089 5.661-0.089t5.661 0.089q3.714 0.179 5.75 2.214t2.214 5.75q0.089 1.571 0.089 5.661z"></path>
+      </symbol>
+      <symbol id="icon-clock" viewBox="0 0 20 20">
+        <path d="M10 0.4c-5.303 0-9.601 4.298-9.601 9.6 0 5.303 4.298 9.601 9.601 9.601 5.301 0 9.6-4.298 9.6-9.601s-4.299-9.6-9.6-9.6zM9.999 17.6c-4.197 0-7.6-3.402-7.6-7.6 0-4.197 3.402-7.6 7.6-7.6 4.197 0 7.601 3.402 7.601 7.6 0 4.197-3.404 7.6-7.601 7.6zM11 9.33v-5.33h-2v6.245l-3.546 2.048 1 1.732 4.115-2.377c0.238-0.137 0.431-0.473 0.431-0.748v-0.168l4.24-4.166c-0.198-0.271-0.411-0.529-0.647-0.766l-3.593 3.53z"></path>
+      </symbol>
+
+      <symbol id="icon-mobile" viewBox="0 0 32 32">
+        <path d="M22 0h-12c-2.209 0-4 1.791-4 4v24c0 2.209 1.791 4 4 4h12c2.209 0 4-1.791 4-4v-24c0-2.209-1.791-4-4-4zM16.5 3h3c0.275 0 0.5 0.224 0.5 0.5s-0.225 0.5-0.5 0.5h-3c-0.276 0-0.5-0.224-0.5-0.5s0.224-0.5 0.5-0.5zM13 2c0.552 0 1 0.448 1 1s-0.448 1-1 1-1-0.448-1-1 0.448-1 1-1zM18 29c0 0.553-0.447 1-1 1h-2c-0.552 0-1-0.447-1-1v-2c0-0.553 0.448-1 1-1h2c0.553 0 1 0.447 1 1v2zM24 23c0 0.553-0.447 1-1 1h-14c-0.552 0-1-0.447-1-1v-16c0-0.552 0.448-1 1-1h14c0.553 0 1 0.448 1 1v16z"></path>
+      </symbol>
+
+      <symbol id="icon-magic-wand" viewBox="0 0 32 32">
+        <path d="M8 6l-4-4h-2v2l4 4zM10 0h2v4h-2zM18 10h4v2h-4zM20 4v-2h-2l-4 4 2 2zM0 10h4v2h-4zM10 18h2v4h-2zM2 18v2h2l4-4-2-2zM31.563 27.563l-19.879-19.879c-0.583-0.583-1.538-0.583-2.121 0l-1.879 1.879c-0.583 0.583-0.583 1.538 0 2.121l19.879 19.879c0.583 0.583 1.538 0.583 2.121 0l1.879-1.879c0.583-0.583 0.583-1.538 0-2.121zM15 17l-6-6 2-2 6 6-2 2z"></path>
+      </symbol>
+
+      <symbol id="icon-case" viewBox="0 0 32 32">
+        <path d="M30 8h-8v-2c0-1.1-0.9-2-2-2h-8c-1.1 0-2 0.9-2 2v2h-8c-1.1 0-2 0.9-2 2v18c0 1.1 0.9 2 2 2h28c1.1 0 2-0.9 2-2v-18c0-1.1-0.9-2-2-2zM12 6.004c0.001-0.001 0.002-0.003 0.004-0.004h7.993c0.001 0.001 0.003 0.002 0.004 0.004v1.996h-8v-1.996zM30 16h-4v3c0 0.55-0.45 1-1 1h-2c-0.55 0-1-0.45-1-1v-3h-12v3c0 0.55-0.45 1-1 1h-2c-0.55 0-1-0.45-1-1v-3h-4v-2h28v2z"></path>
+      </symbol>
+
+      <symbol id="icon-embed" viewBox="0 0 40 32">
+        <path d="M26 23l3 3 10-10-10-10-3 3 7 7z"></path>
+        <path d="M14 9l-3-3-10 10 10 10 3-3-7-7z"></path>
+        <path d="M21.916 4.704l2.171 0.592-6 22.001-2.171-0.592 6-22.001z"></path>
+      </symbol>
+
+      <symbol id="icon-star" viewBox="0 0 32 32">
+        <path d="M0 12.128h3.008l9.12 0.064 3.072-8.64 0.928-2.88 0.928 2.944 2.816 8.704 12.128 0.256-2.432 1.728-7.456 5.312 2.624 8.768 0.896 2.944-2.432-1.824-7.392-5.376-7.424 5.184-2.496 1.696 0.928-2.88 2.88-8.64-7.264-5.568zM6.048 14.176l5.376 4.128 0.64 0.448-0.256 0.672-2.112 6.496 5.632-3.936 0.544-0.352 0.576 0.416 5.504 4-1.952-6.496-0.192-0.672 0.576-0.448 5.568-4-6.88-0.128-0.704-0.064-0.256-0.672-2.048-6.432-2.24 6.368-0.256 0.672h-7.52z"></path>
+      </symbol>
+
+      <symbol id="icon-heart" viewBox="0 0 32 32">
+        <path d="M29.728 10.656q0-1.472-0.384-2.56t-0.992-1.76-1.472-1.056-1.664-0.576-1.76-0.128-1.984 0.448-1.984 1.152-1.536 1.28-1.088 1.088q-0.32 0.416-0.864 0.416t-0.864-0.416q-0.448-0.48-1.088-1.088t-1.536-1.28-1.984-1.152-1.984-0.448-1.76 0.128-1.664 0.576-1.472 1.056-0.992 1.76-0.384 2.56q0 2.976 3.36 6.336l10.368 9.984 10.368-9.984q3.36-3.36 3.36-6.336zM32 10.656q0 3.936-4.096 8.032l-11.104 10.72q-0.32 0.32-0.8 0.32t-0.8-0.32l-11.136-10.752q-0.16-0.16-0.48-0.48t-0.992-1.184-1.216-1.728-0.96-2.144-0.416-2.464q0-3.936 2.272-6.144t6.272-2.24q1.088 0 2.24 0.384t2.144 1.056 1.728 1.216 1.344 1.216q0.64-0.64 1.344-1.216t1.728-1.216 2.144-1.056 2.24-0.384q4 0 6.272 2.24t2.272 6.144z"></path>
+      </symbol>
+
+      <symbol id="icon-magic2" viewBox="0 0 30 32">
+        <path d="M21.248 10.368l5.248-5.216-1.92-1.92-5.248 5.216zM29.248 5.152q0 0.48-0.32 0.8l-22.976 22.976q-0.32 0.32-0.8 0.32t-0.8-0.32l-3.552-3.552q-0.32-0.32-0.32-0.8t0.32-0.8l22.976-22.976q0.32-0.32 0.8-0.32t0.8 0.32l3.552 3.552q0.32 0.32 0.32 0.8zM5.12 1.76l1.728 0.512-1.728 0.544-0.544 1.76-0.544-1.76-1.76-0.544 1.76-0.512 0.544-1.76zM11.36 4.64l3.488 1.088-3.488 1.056-1.088 3.488-1.056-3.488-3.488-1.056 3.488-1.088 1.056-3.488zM27.968 13.184l1.76 0.544-1.76 0.512-0.544 1.76-0.544-1.76-1.728-0.512 1.728-0.544 0.544-1.76zM16.544 1.76l1.728 0.512-1.728 0.544-0.544 1.76-0.544-1.76-1.728-0.544 1.728-0.512 0.544-1.76z"></path>
+      </symbol>
+
+      <symbol id="icon-gamepad" viewBox="0 0 34 32">
+        <path d="M14.848 19.424v-2.272q0-0.256-0.16-0.416t-0.416-0.16h-3.424v-3.424q0-0.256-0.16-0.416t-0.416-0.16h-2.272q-0.256 0-0.416 0.16t-0.16 0.416v3.424h-3.424q-0.256 0-0.416 0.16t-0.16 0.416v2.272q0 0.256 0.16 0.416t0.416 0.16h3.424v3.424q0 0.256 0.16 0.416t0.416 0.16h2.272q0.256 0 0.416-0.16t0.16-0.416v-3.424h3.424q0.256 0 0.416-0.16t0.16-0.416zM25.152 20.576q0-0.96-0.672-1.632t-1.632-0.672-1.6 0.672-0.672 1.632 0.672 1.6 1.6 0.672 1.632-0.672 0.672-1.6zM29.728 16q0-0.96-0.672-1.632t-1.632-0.64-1.6 0.64-0.672 1.632 0.672 1.6 1.6 0.672 1.632-0.672 0.672-1.6zM34.272 18.272q0 3.808-2.656 6.464t-6.464 2.688q-3.424 0-6.048-2.272h-3.936q-2.592 2.272-6.016 2.272-3.808 0-6.464-2.688t-2.688-6.464 2.688-6.464 6.464-2.656h16q3.776 0 6.464 2.656t2.656 6.464z"></path>
+      </symbol>
+
+      <symbol id="icon-develop" viewBox="0 0 37 32">
+        <path d="M36.576 15.968q0 0.384-0.224 0.672t-0.608 0.352l-3.648 6.336q0.064 0.16 0.064 0.32 0 0.384-0.224 0.64t-0.608 0.352l-3.424 6.016q0.032 0.16 0.032 0.288 0 0.416-0.288 0.704t-0.704 0.32q-0.448 0-0.736-0.32h-7.168q-0.288 0.352-0.768 0.352t-0.768-0.352h-7.104q-0.32 0.352-0.768 0.352-0.416 0-0.704-0.288t-0.32-0.736q0-0.128 0.064-0.352l-3.424-5.984q-0.384-0.064-0.608-0.352t-0.224-0.64q0-0.16 0.064-0.32l-3.68-6.336q-0.352-0.096-0.576-0.384t-0.224-0.64 0.256-0.64 0.576-0.352l3.552-6.144q0 0 0-0.032t0-0.064q0-0.64 0.608-0.928l3.712-6.464q-0.064-0.192-0.064-0.32 0-0.448 0.32-0.736t0.704-0.288q0.448 0 0.8 0.384h7.040q0.288-0.384 0.768-0.384t0.768 0.384h7.136q0.32-0.384 0.768-0.384 0.416 0 0.704 0.288t0.32 0.736q0 0.096-0.064 0.32l3.68 6.4q0.416 0 0.704 0.288t0.288 0.704q0 0.224-0.128 0.48l3.328 5.792q0.352 0.064 0.576 0.352t0.224 0.608zM18.976 30.24h6.944l-6.112-6.304h-2.528l-6.112 6.304h6.432q0.32-0.288 0.672-0.288t0.704 0.288zM2.016 15.744q0 0.064 0 0.224 0 0.192-0.032 0.288l3.712 6.432 0.256 0.096 3.36-3.552v-6.208l-3.328-3.456q-0.224 0.16-0.512 0.192zM17.6 1.76h-6.912l3.392 3.552 9.888-3.552h-4.992q-0.288 0.288-0.704 0.288t-0.672-0.288zM30.176 23.392q0-0.096 0.064-0.192l-1.12-1.216-0.32 1.408h1.376zM28.256 23.392l0.416-1.888-4.512-4.736-5.28 5.472 1.12 1.152h8.256zM26.688 29.952l0.288-0.48 1.184-5.536h-7.648l5.952 6.112q0.16-0.064 0.224-0.096zM10.336 30.24h0.064l6.112-6.304h-6.656v5.984l0.064 0.096q0.256 0.096 0.416 0.224zM9.856 23.392h7.168l1.152-1.184-5.504-5.728-2.816 2.976v3.936zM6.4 23.392h2.912v-3.36l-2.976 3.136q0.064 0.16 0.064 0.224zM6.4 8.672q0 0 0 0.032t0 0.032q0 0.288-0.128 0.512l3.040 3.168v-4.8zM9.856 7.424v5.536l2.72 2.816 5.312-5.632-3.968-4.192zM9.92 1.984l-0.064 0.128v4.736l3.648-1.344-3.392-3.584q-0.096 0.032-0.192 0.064zM25.856 1.76h-0.288l-11.104 4 3.808 4zM18.272 10.528l-5.312 5.632 5.568 5.696 5.28-5.472zM12.288 16.096l-2.432-2.496v5.056zM18.528 22.592l-0.736 0.8h1.504zM24.544 16.384l4.256 4.48 2.336-11.136-0.032-0.096h-0.032zM30.688 9.248q-0.16-0.224-0.16-0.512v-0.032l-3.84-6.72q-0.096-0.032-0.224-0.096l-7.808 8.256 5.536 5.856zM9.312 7.040v-4l-2.912 5.056zM9.312 23.936h-2.912l2.912 5.056v-5.056zM28.704 23.936l-0.864 4.032 2.336-4.032h-1.472zM30.88 22.688l3.68-6.464q-0.032-0.16-0.032-0.256 0 0 0.064-0.288l-3.040-5.28-2.304 10.944 1.376 1.472q0.064-0.064 0.256-0.128z"></path>
+      </symbol>
+
+      <symbol id="icon-diamond" viewBox="0 0 37 32">
+        <path d="M3.776 13.728l11.136 11.872-5.344-11.872h-5.792zM18.272 27.488l6.24-13.76h-12.448zM9.6 11.424l3.648-6.848h-4.672l-5.152 6.848h6.176zM21.664 25.6l11.136-11.872h-5.792zM12.192 11.424h12.192l-3.648-6.848h-4.896zM26.976 11.424h6.176l-5.152-6.848h-4.672zM29.472 2.752l6.88 9.152q0.224 0.32 0.224 0.736t-0.32 0.704l-17.12 18.304q-0.32 0.352-0.864 0.352t-0.832-0.352l-17.12-18.304q-0.288-0.288-0.32-0.704t0.224-0.736l6.88-9.152q0.32-0.48 0.896-0.48h20.576q0.576 0 0.896 0.48z"></path>
+      </symbol>
+
+      <symbol id="icon-pictures" viewBox="0 0 48 48">
+        <path d="M34 12.5c0 1.38 1.12 2.5 2.5 2.5s2.5-1.12 2.5-2.5-1.12-2.5-2.5-2.5-2.5 1.12-2.5 2.5zM9 26v2.75c0 1.24 1.010 2.25 2.25 2.25h27.75l-9.561-9.4c-0.8-0.8-2.080-0.8-2.879 0l-2.021 1.99-5.101-4.99c-0.8-0.8-2.239-0.8-3.029 0l-7.409 7.4zM0 43c0 2.21 1.79 4 4 4h40c2.21 0 4-1.79 4-4l-0-38c0-2.21-1.79-4-4-4l-40 0c-2.21 0-4 1.79-4 4v38zM7.2 6h33.6c1.22 0 2.2 0.98 2.2 2.2v24.6c0 1.22-0.98 2.2-2.2 2.2l-33.6-0c-1.22 0-2.2-0.98-2.2-2.2v-24.6c0-1.22 0.98-2.2 2.2-2.2z"></path>
+      </symbol>
+
+      <symbol id="icon-aircraft" viewBox="0 0 20 20">
+        <path d="M12.496 17.414c-0.394-1.096-1.805-4.775-2.39-6.297-1.103 0.737-2.334 1.435-3.512 1.928-0.366 1.28-1.094 3.709-1.446 4.033-0.604 0.557-0.832 0.485-0.925-0.279s-0.485-3.236-0.485-3.236-2.162-1.219-2.84-1.568-0.667-0.591 0.057-0.974c0.422-0.223 2.927-0.085 4.242 0.005 0.861-0.951 1.931-1.882 2.993-2.679-1.215-1.076-4.15-3.675-5.034-4.424-0.776-0.658 0.079-0.797 0.079-0.797 0.39-0.070 1.222-0.132 1.628-0.009 2.524 0.763 6.442 2.068 7.363 2.376 0.353-0.249 0.737-0.52 1.162-0.821 4.702-3.33 5.887-2.593 6.111-2.27s0.503 1.701-4.199 5.032c-0.425 0.301-0.808 0.573-1.16 0.823-0.029 0.98-0.157 5.151-0.311 7.811-0.025 0.428-0.367 1.198-0.565 1.544-0.001 0-0.423 0.765-0.768-0.198z"></path>
+      </symbol>
+    </defs>
+  </svg>
+
+
+  <!-- Header section -->
+  <header class="header-section" id="home">
+    <div class="container">
+      <div class="l-header-top-line">
+        <div>
+          <a href="#" class="logo secondary font">D<span class="rotated-char">D</span></a>
+        </div>
+        <div>
+          <div class="menu-toggle">
+            <span class="menu-icon"></span>
+          </div>
+          <nav class="main-menu secondary-font" id="menu">
+
+            <ul class="main-menu-list">
+              <li class="menu-item"><a href="#home" class="menu-link link-active">Home</a></li>
+              <li class="menu-item"><a href="#about" class="menu-link">About</a></li>
+              <li class="menu-item"><a href="#work" class="menu-link">Work</a></li>
+              <li class="menu-item"><a href="#process" class="menu-link">Process</a></li>
+              <li class="menu-item"><a href="#services" class="menu-link">Services</a></li>
+              <li class="menu-item"><a href="#testimonial" class="menu-link">Testimonial</a></li>
+              <li class="menu-item"><a href="#contact" class="menu-link">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div><!--.l-header-top-line -->
+      
+      <div class="l-header-content">
+        <div>
+          <article class="header-content">
+            <h1 class="header-title secondary-font">We Design and Develop</h1>
+            <p class="header-txt primary-font">We are a new design studio based in USA. We have over 20 years of combined experience, and know a thing or two about designing websites and mobile apps.</p>
+            <a href="#" class="header-feedback-link secondary-font">Contact us</a>
+          </article>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Info section -->
+  <article class="info-section" id="about">
+    <div class="container">
+      <div class="l-info-about-us">
+        <div>
+          <section class="info-about-us">
+            <h2 class="about-us-title secondary-font">About Us</h2>
+            <p class="about-us-txt primary-font">Divide have don't man wherein air fourth. Own itself make have night won't make. A you under Seed appear which good give. Own give air without fowl moveth dry first heaven fruit, dominion she'd won't very all.</p>
+            <span class="signature-container">
+              <svg id="signature" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 225 60"><style></style>
+                <path class="signature" d="M3.3,42.9C29.7,31.4,47.4,19.8,58.8,11.2c5.7-4.3,12.1-9.1,11.6-9.9C69.7.2,56.6,8,48.3,13.4,37.4,20.6,34.2,24.3,34.5,27.9a6.32,6.32,0,0,0,1.9,3.9c5.22,5,19.17-.17,19.47-4.4.16-2.3-3.63-5.17-7-4.9-2.74.22-5.6,2.51-5.33,4.33.24,1.61,2.9,2.65,4.85,2.92,4,.57,5.71-2,12.82-5.25,6.91-3.13,11-3.23,12.83-3.17,2.6.09,5.74.19,6.3,1.67.79,2.1-6,6.45-19.4,15.1-1.68,1.08-2.26,1.44-2.35,1.34-.41-.51,11.09-11.42,25-20.94,7-4.81,18-12.37,20.17-10.17,1.5,1.53-1.85,7.21-4.34,10.17-1,1.16-5,5.76-10.63,6.1-.59,0-3.08.19-3.4-.7-.47-1.31,3.93-4.44,4.53-3.9s-2,4.87-5,8c-4.22,4.45-8.86,6.11-13.66,7.83-6.49,2.33-9.56,1.67-10.78,1.23L60,36.9c-1.94-.83-3.67-2.38-3.5-2.73.36-.74,8.57,4.59,21,5.88,4.45.47,5-.06,8.34.42,8.38,1.19,14.63,5.76,18.66,9.53a61.88,61.88,0,0,1-4.83-7A55.08,55.08,0,0,1,97,38c-3.19-7.46,5.63-22.62,18.85-30.95,4-2.54,11.57-6.39,13.15-4.55,2.35,2.74-9.82,16.58-11.83,18.83a110.2,110.2,0,0,1-22.27,19A133.3,133.3,0,0,1,50.6,57.7c-3.22.61-8.72,1.44-12.77-1.7-.18-.14-4.36-3.46-3.66-6.5,1.3-5.7,18.7-6.73,31.83-7.5,19.73-1.15,29.87.88,39.86-5.46,2.42-1.53,5.73-4.13,6.31-3.54s-1.71,4.75-5.47,6.2c-1.31.51-3.46.94-3.9.2s1.36-3.34,3.59-4.6c4.43-2.5,10.82-.52,10.94,1s-5.26,2.91-5.16,3.17,3.16-.74,7.5-2.17c3.72-.87,6.66-1.32,6.93-.63s-2.78,2.63-2.8,2.6,4.87-2.52,7.9-7.2a5.76,5.76,0,0,0,1.13-3.93c-.16-1.19-.88-2.66-1.66-2.67-1,0-2.49,2.63-2,4.4,1.39,4.69,17,3.94,17,4.6,0,.34-4.28.16-9.67,1.7-1.91.55-5.24,1.5-5.17,2.3.12,1.25,8.46,2,16.34,1.17,5.54-.58,10.38-1.88,10.43-1.67s-5.69,1.46-5.6,2.1,6.09.9,12.3-.5c3.24-.73,6.39-1.88,6.5-1.6s-4.16,1.84-4,2.83c.14.69,2.41.89,5.17.87,8.15.2,16.8.16,25.9-.2,8.87-.35,17.28-1,25.2-1.8"/>
+              </svg>
+            </span>
+          </section>
+        </div>
+      </div>
+    </div>
+    <section class="info-skills">
+      <div class="container">
+        <div class="l-info-skills">
+          <div>
+            <div class="skills-block">
+              <h3 class="skills-block-title secondary-font">Professional Skills</h3>
+              <div class="skill-meter">
+                <h4 class="skill-name secondary-font">UI/UX design<span class="skill-value">75%</span></h4>
+                <div class="skill-line"></div>
+              </div>
+              <div class="skill-meter">
+                <h4 class="skill-name secondary-font">Web development<span class="skill-value">90%</span></h4>
+                <div class="skill-line"></div>
+              </div>
+              <div class="skill-meter">
+                <h4 class="skill-name secondary-font">Marketing<span class="skill-value">65%</span></h4>
+                <div class="skill-line"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="info-numbers secondary-font">
+      <div class="container">
+        <div class="l-info-numbers">
+          <div>
+            <div class="numbers-data">
+              <svg class="numbers-data-icon icon">
+                <use xlink:href="#icon-case"/>
+              </svg>
+              <p class="numbers-data-txt">
+                <span class="numbers-data-value">548</span>
+                <br>
+                Projects complated
+              </p>
+              
+            </div>
+          </div>
+          <div>
+            <div class="numbers-data">
+              <svg class="numbers-data-icon icon">
+                <use xlink:href="#icon-clock"/>
+              </svg>
+              <p class="numbers-data-txt numbers-hours">
+                <span class="numbers-data-value">1465</span>
+                <br>
+                Working hours
+              </p>
+            </div>
+          </div>
+          <div>
+            <div class="numbers-data">
+              <svg class="numbers-data-icon icon">
+                <use xlink:href="#icon-star"/>
+              </svg>
+              <p class="numbers-data-txt numbers-feedback">
+                <span class="numbers-data-value">612</span>
+                <br>
+                Positive feedbacks
+              </p>
+            </div>
+          </div>
+          <div>
+            <div class="numbers-data">
+              <svg class="numbers-data-icon icon">
+                <use xlink:href="#icon-heart"/>
+              </svg>
+              <p class="numbers-data-txt numbers-clients">
+                <span class="numbers-data-value">735</span>
+                <br>
+                Happy clients
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </article>
+  <!-- Gallery section -->
+  <div class="gallery-section" id="work">
+    <div class="l-gallery">
+      <div>
+        <div class="gallery-img-wrap">
+          <img class="gallery-img" src="assets/images/mini-ipad.jpg" alt="">
+          <div class="gallery-info">
+            <h4 class="secondary-font">About this work</h4>
+            <p class="primary-font">Success doesn't come to you... you go to it.</p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="gallery-img-wrap">
+          <img class="gallery-img" src="assets/images/laptop.jpg" alt="">
+          <div class="gallery-info">
+            <h4 class="secondary-font">About this work</h4>
+            <p class="primary-font">Not to know is bad, not to wish to know is worse.</p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="gallery-img-wrap">
+          <img class="gallery-img" src="assets/images/notes.jpg" alt="">
+          <div class="gallery-info">
+            <h4 class="secondary-font">About this work</h4>
+            <p class="primary-font">The secret of success is constancy to purpose.</p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="gallery-img-wrap">
+          <img class="gallery-img" src="assets/images/site.jpg" alt="">
+          <div class="gallery-info">
+            <h4 class="secondary-font">About this work</h4>
+            <p class="primary-font">Being entirely honest with oneself is a good exercise.</p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="gallery-img-wrap">
+          <img class="gallery-img" src="assets/images/notes.jpg" alt="">
+          <div class="gallery-info">
+            <h4 class="secondary-font">About this work</h4>
+            <p class="primary-font">Give Peace a Chance</p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="gallery-img-wrap">
+          <img class="gallery-img" src="assets/images/site.jpg" alt="">
+          <div class="gallery-info">
+            <h4 class="secondary-font">About this work</h4>
+            <p class="primary-font">No pain, no gain, remember.</p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="gallery-img-wrap">
+          <img class="gallery-img" src="assets/images/mini-ipad.jpg" alt="">
+          <div class="gallery-info">
+            <h4 class="secondary-font">About this work</h4>
+            <p class="primary-font">Life is what happens to you while you’re busy making other plans.</p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="gallery-img-wrap">
+          <img class="gallery-img" src="assets/images/laptop.jpg" alt="">
+          <div class="gallery-info">
+            <h4 class="secondary-font">About this work</h4>
+            <p class="primary-font">Reality leaves a lot to the imagination.</p>
+          </div>
+        </div>
+      </div>
+    </div><!-- .l-gallery-->
+    <div class="gallery-btn secondary-font">Load more work</div>
+  </div>
+  <!-- Work process section -->
+  <section class="process-section" id="process">
+    <div class="container">
+      <div class="l-process">
+        <div>
+          <h3 class="process-title secondary-font">Our Work Process</h3>
+          <p class="process-txt primary-font">The whole working process is divided into stages, where professionals work at each stage, investing all their energy to achieve the desired result.</p>
+        </div>
+      </div>
+      <div class="l-process-video">
+        <div>
+          <div id="player">
+            <div class="show-state"></div>
+            <video poster="assets/images/our-ofice_poster.jpg">
+              <source src="assets/videos/MoreRallyingInFinland.webm" type="video/webm">
+                <source src="assets/videos/MoreRallyingInFinland2017ByJPeltsi.mp4" type="video/mp4">
+                </video>
+                <div class="control-panel">
+                  <button class="play-btn"><img class="play-img" src="assets/images/svg/play.svg" alt=""></button>
+                  <input class="video-progress" type="range" min="0" value="0">
+                  <input class="volume" type="range" step="0.1" min="0" max="1">
+                </div>
+              </div>
+            </div>
+          </div>     
+        </div>
+      </section>
+      <!-- Services section -->
+      <section class="services-section" id="services">
+        <div class="container">
+          <div class="l-services">
+            <div>
+              <article class="services-info">
+                <svg class="services-info-icon icon">
+                  <use xlink:href="#icon-diamond"/>
+                </svg>
+                <h4 class="services-info-title secondary-font">UI / UX Design</h4>
+                <p class="services-info-txt primary-font">Be set fourth land god darkness make it wherein own</p>
+              </article>
+            </div>
+            <div>
+              <article class="services-info">
+                <svg class="services-info-icon icon">
+                  <use xlink:href="#icon-develop"/>
+                </svg>
+                <h4 class="services-info-title secondary-font">Web development</h4>
+                <p class="services-info-txt primary-font">A she'd them bring void moving third she'd kind fill</p>
+              </article>
+            </div>
+            <div>
+              <article class="services-info">
+                <svg class="services-info-icon icon">
+                  <use xlink:href="#icon-mobile"/>
+                </svg>
+                <h4 class="services-info-title secondary-font">APP / Mobile</h4>
+                <p class="services-info-txt primary-font">Dominion man second spirit he, earth they're creeping</p>
+              </article>
+            </div>
+            <div>
+              <article class="services-info">
+                <svg class="services-info-icon icon">
+                  <use xlink:href="#icon-gamepad"/>
+                </svg>
+                <h4 class="services-info-title secondary-font">Game design</h4>
+                <p class="services-info-txt primary-font">Morning his saying moveth it multiply appear life be</p>
+              </article>
+            </div>
+            <div>
+              <article class="services-info">
+                <svg class="services-info-icon icon">
+                  <use xlink:href="#icon-aircraft"/>
+                </svg>
+                <h4 class="services-info-title secondary-font">SEO / Marketing</h4>
+                <p class="services-info-txt primary-font">Give won't after land fill creeping meat you, may</p>
+              </article>
+            </div>
+            <div>
+              <article class="services-info">
+                <svg class="services-info-icon icon">
+                  <use xlink:href="#icon-star"/>
+                </svg>
+                <h4 class="services-info-title secondary-font">Photography</h4>
+                <p class="services-info-txt primary-font">Creepeth one seas cattle grass give moving saw give</p>
+              </article>
+            </div>
+            <div>
+              <article class="services-info">
+                <svg class="services-info-icon icon">
+                  <use xlink:href="#icon-magic-wand"/>
+                </svg>
+                <h4 class="services-info-title secondary-font">Graphic design</h4>
+                <p class="services-info-txt primary-font">Open, great whales air rule for, fourth life whales</p>
+              </article>
+            </div>
+            <div>
+              <article class="services-info">
+                <svg class="services-info-icon icon">
+                  <use xlink:href="#icon-pictures"/>
+                </svg>
+                <h4 class="services-info-title secondary-font">Illustration</h4>
+                <p class="services-info-txt primary-font">Whales likeness hath, man kind for them air two won't</p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonial section -->
+      <div class="testimonial-section secondary-font" id="testimonial">
+        <div class="container">
+          <div class="l-slider">
+            <div>
+              <div class="slider">
+                <div class="slides">
+                  <div class="slide slide-1">
+                    <blockquote>
+                      <p class="blockquote-txt">"Outstanding job and exceeded all expectations. It was a pleasure to work with them on a sizable first project and am looking forward to start the next one asap."</p>
+                    </blockquote>
+                    <p class="author-name">Michael Hopkins</p>
+                  </div>
+                  <div class="slide slide-2">
+                    <blockquote>
+                      <p class="blockquote-txt">"Wise men speak because they have something to say; fools because they have to say something."</p>
+                    </blockquote>
+                    <p class="author-name">Platon</p>
+                  </div>
+                  <div class="slide slide-3">
+                    <blockquote>
+                      <p class="blockquote-txt">"I don’t care what you think about me. I don’t think about you at all."</p>
+                    </blockquote>
+                    <p class="author-name">Coco Chanel</p>
+                  </div>
+                </div>
+
+                <div class="slider-toggle">
+                  <span class="toggle-btn" data-slide-num="0"></span>
+                  <span class="toggle-btn" data-slide-num ="1"></span>
+                  <span class="toggle-btn" data-slide-num="2"></span>
+                </div>
+              </div>
+              </div>
+            </div>
+          </div><!--.l-slider-->
+        </div>
+
+      <!-- Clieents logo section -->
+      <div class="clients-list-section">
+        <div class="container">
+          <div class="l-clients">
+            <div>
+              <div class="client-logo logo-1"></div>
+            </div>
+            <div>
+              <div class="client-logo logo-2"></div>
+            </div>
+            <div>
+              <div class="client-logo logo-3"></div>
+            </div>
+            <div>
+              <div class="client-logo logo-4"></div>
+            </div>
+            <div>
+              <div class="client-logo logo-5"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Feedback section -->
+      <section class="feedback-section" id="contact">
+        <div class="container">
+          <div class="l-feedback">
+            <div>
+              <article class="feedback-info">
+                <h3 class="feedback-info-title secondary-font">Need A Progect?</h3>
+                <p class="feedback-info-txt primary-font">Let us know what you are looking for. Write to us and we will contact you. Perhaps working with you will give us the opportunity to create something new and beautiful.</p>
+                <ul class="contact-data-list primary-font">
+                  <li class="data-item"><strong class="data-name secondary-font">Address: </strong>10111 Manhattan Water str, NY</li>
+                  <li class="data-item"><strong class="data-name secondary-font">Phone: </strong>+44 856 097 555</li>
+                  <li class="data-item"><strong class="data-name secondary-font">Email: </strong>myExample@mail.com</li>
+                  <li class="data-item"><strong class="data-name secondary-font">Fax: </strong>+44 856 097 556</li>
+                </ul>
+              </article>
+            </div>
+            <div>
+              <form action="action.php" class="feedback-form primary-font">
+                <input type="text" class="field-name" placeholder="Your Name" required>
+                <input type="email" class="field-email" placeholder="Your Email" required >
+                <input type="text" class="field-title" placeholder="Your Title" required>
+                <textarea name="comment" cols="30" rows="6" class="field-coment" placeholder="Your Comment"></textarea>
+                <input type="submit" class="btn-submit secondary-font" value="Send message">
+              </form>
+            </div>
+          </div>
+        </div>
+      <!-- Google map -->
+      <div class="map-section">
+        <div class="container">
+          <div id="map"></div>
+        </div>
+      </div>
+      </section>
+      <!-- Footer section -->
+      <footer class="footer-section primary-font">
+        <div class="container">
+          <div class="l-footer">
+            <div>
+              <div class="copyright-block">
+                <h4 class="copyright-title secondary-font">Piroll Design, Inc.</h4>
+                <p class="copyright-txt">&copy; 2017 Piroll. All rights reserved. Designed by robirurk.</p>
+                <p class="psd-link">This PSD template was be taken from <a href="https://dribbble.com/sudinasa">dribbble.com/sudinasa</a></p>
+              </div>
+            </div>
+            <div>
+              <div class="contacts-block">
+                <span class="email">hello@pirolltheme.com</span>
+                <span class="phone">+32 234 934 973</span>
+              </div>
+            </div>
+            <div>
+              <ul class="footer-nav-list">
+                <li class="footer-nav-item"><a href="#" class="footer-nav-link">Projects</a></li>
+                <li class="footer-nav-item"><a href="#" class="footer-nav-link">News</a></li>
+                <li class="footer-nav-item"><a href="#" class="footer-nav-link">About</a></li>
+                <li class="footer-nav-item"><a href="#" class="footer-nav-link">Events</a></li>
+                <li class="footer-nav-item"><a href="#" class="footer-nav-link">Services</a></li>
+                <li class="footer-nav-item"><a href="#" class="footer-nav-link">Contact</a></li>
+                <li class="footer-nav-item"><a href="#" class="footer-nav-link">Carreer</a></li>
+                <li class="footer-nav-item"><a href="#" class="footer-nav-link">Legals</a></li>
+              </ul>
+            </div>
+            <div>
+              <div class="footer-socials">
+                <a href="#" class="footer-social-link"><svg class="icon footer-icon"><use xlink:href="#icon-facebook"/></svg>Facebook</a>
+                <a href="#" class="footer-social-link"><svg class="icon footer-icon"><use xlink:href="#icon-twitter"/></svg>Twitter</a>
+                <a href="#" class="footer-social-link"><svg class="icon footer-icon"><use xlink:href="#icon-instagram"/></svg>Instagram</a>
+                <a href="#" class="footer-social-link"><svg class="icon footer-icon"><use xlink:href="#icon-dribble"/></svg>Dribble</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB86wuTDCPFfzEtDlGf_8VZxZxSeojv_4w&callback=initMap&language=en"
+      async defer></script>
+      <script src="assets/js/action.min.js"></script>
+    </body>
+</html>
