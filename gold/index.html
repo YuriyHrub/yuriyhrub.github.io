@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge"> <!-- special for IE -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Site Description............."> <!-- maxLength = 150 -->
+  <title>Gold - start page</title> <!-- maxLength = 65 -->
+
+  <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Great+Vibes|Montserrat:300,400,500,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles/normalize.min.css">
+  <link rel="stylesheet" href="assets/styles/style.css">
+  
+  <!--[if IE]>
+    IF IE < 9 version.
+    <style>
+    </style>
+    If need respond.js;
+  <![endif]-->
+  <style>
+  </style>
+</head>
+<body>
+  <!-- SVG icons -->
+<svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <symbol id="icon-twitter" viewBox="0 0 39 32">
+      <title>twitter</title>
+      <path d="M0 28.384q0.96 0.096 1.92 0.096 5.632 0 10.048-3.456-2.624-0.032-4.704-1.6t-2.848-4q0.64 0.128 1.504 0.128 1.12 0 2.144-0.288-2.816-0.544-4.64-2.784t-1.856-5.12v-0.096q1.696 0.96 3.68 0.992-1.664-1.088-2.624-2.88t-0.992-3.84q0-2.176 1.12-4.064 3.008 3.744 7.36 5.952t9.28 2.496q-0.224-1.056-0.224-1.856 0-3.328 2.368-5.696t5.728-2.368q3.488 0 5.888 2.56 2.784-0.576 5.12-1.984-0.896 2.912-3.52 4.48 2.336-0.288 4.608-1.28-1.536 2.4-4 4.192v1.056q0 3.232-0.928 6.464t-2.88 6.208-4.64 5.28-6.432 3.68-8.096 1.344q-6.688 0-12.384-3.616z"></path>
+    </symbol>
+    <symbol id="icon-pinterest" viewBox="0 0 27 32">
+      <title>pinterest</title>
+      <path d="M27.424 16q0 3.744-1.824 6.88t-4.992 4.992-6.88 1.856q-1.984 0-3.904-0.576 1.056-1.664 1.376-2.944 0.192-0.608 0.992-3.776 0.352 0.704 1.28 1.216t2.048 0.512q2.176 0 3.872-1.216t2.624-3.36 0.928-4.832q0-2.048-1.088-3.84t-3.072-2.88-4.544-1.152q-1.888 0-3.52 0.544t-2.752 1.376-1.952 1.952-1.184 2.304-0.384 2.4q0 1.856 0.704 3.264t2.112 1.984q0.512 0.224 0.672-0.352 0.032-0.128 0.128-0.544t0.16-0.544q0.096-0.416-0.192-0.768-0.928-1.088-0.928-2.688 0-2.688 1.856-4.64t4.896-1.952q2.688 0 4.224 1.472t1.504 3.808q0 3.040-1.248 5.152t-3.136 2.144q-1.088 0-1.728-0.8t-0.416-1.856q0.128-0.608 0.48-1.664t0.544-1.824 0.192-1.376q0-0.896-0.48-1.472t-1.376-0.576q-1.12 0-1.888 0.992t-0.768 2.56q0 1.28 0.448 2.176l-1.76 7.456q-0.288 1.248-0.224 3.168-3.68-1.632-5.952-5.024t-2.272-7.552q0-3.744 1.856-6.88t4.96-4.992 6.912-1.856 6.88 1.856 4.992 4.992 1.824 6.88z"></path>
+    </symbol>
+    <symbol id="icon-facebook" viewBox="0 0 16 32">
+      <title>facebook</title>
+      <path d="M16 6.592h-4.544q-0.448 0-0.8 0.48t-0.352 1.184v3.264h5.696v4.736h-5.696v14.144h-5.44v-14.144h-4.864v-4.736h4.864v-2.752q0-3.008 1.888-5.088t4.704-2.080h4.544v4.992z"></path>
+    </symbol>
+    <symbol id="icon-gplus" viewBox="0 0 29 32">
+      <title>gplus</title>
+      <path d="M1.536 8.896q0-1.856 0.8-3.264t1.792-2.080 2.208-1.088 1.792-0.48 0.832-0.064h7.36v0.128q0 0.704-2.496 1.152-0.896 0-1.216 0.192 1.28 0.64 1.728 1.792t0.448 3.072q0 3.264-2.176 5.056-1.216 1.216-1.216 1.728 0 0.576 1.6 2.048 3.328 2.88 3.328 5.696 0 4.48-3.712 6.208-2.176 1.088-4.8 1.088h-0.128l-0.128-0.064q-0.064 0.064-0.128 0.064-0.768 0-1.728-0.16t-2.4-0.672-2.368-1.824-0.928-3.296q0-1.92 1.024-3.232t2.656-1.824 2.816-0.704 2.272-0.192h0.064q-0.512-0.704-0.768-1.504t-0.256-1.248l0.064-0.448h-0.448q-2.048 0-3.52-0.96-2.368-1.408-2.368-5.12zM13.376 23.36q-0.128-1.664-1.376-2.688t-3.296-1.024h-0.512q-2.048 0.064-3.648 1.472-1.472 1.344-1.344 3.008t1.696 2.56 3.808 0.768q2.176-0.128 3.488-1.28t1.184-2.816zM11.456 7.36q-0.96-3.456-3.904-3.456-0.384 0-0.64 0.064-1.28 0.384-1.856 1.984-0.512 1.6-0.064 3.392 0.448 1.664 1.504 2.72t2.272 1.056q0.384 0 0.576-0.064 1.344-0.384 2.016-2.080t0.096-3.616zM23.872 12.928h4.8v3.008h-4.8v4.8h-3.008v-4.8h-4.8v-3.008h4.8v-4.8h3.008v4.8z"></path>
+    </symbol>
+    <symbol id="icon-basket">
+      <title>basket</title>
+      <path fill-rule="evenodd"  d="M35.860,16.331 L4.197,16.331 C2.296,16.331 0.755,14.790 0.755,12.889 C0.755,10.989 2.296,9.448 4.197,9.448 L8.091,9.448 C8.152,9.227 8.232,9.010 8.351,8.802 L12.481,1.649 C13.242,0.332 14.925,-0.120 16.242,0.641 C17.559,1.402 18.010,3.085 17.250,4.402 L14.337,9.448 L25.719,9.448 L22.806,4.402 C22.046,3.085 22.497,1.402 23.814,0.641 C25.131,-0.120 26.815,0.332 27.575,1.649 L31.705,8.802 C31.825,9.010 31.904,9.227 31.965,9.448 L35.860,9.448 C37.761,9.448 39.302,10.989 39.302,12.889 C39.302,14.790 37.761,16.331 35.860,16.331 ZM35.277,38.358 L4.779,38.358 L3.588,17.708 L36.469,17.708 L35.277,38.358 ZM13.145,24.591 C13.145,23.830 12.528,23.215 11.768,23.215 C11.008,23.215 10.392,23.830 10.392,24.591 L10.392,32.851 C10.392,33.611 11.008,34.228 11.768,34.228 C12.528,34.228 13.145,33.611 13.145,32.851 L13.145,24.591 ZM21.405,24.591 C21.405,23.830 20.789,23.215 20.028,23.215 C19.268,23.215 18.652,23.830 18.652,24.591 L18.652,32.851 C18.652,33.611 19.268,34.228 20.028,34.228 C20.789,34.228 21.405,33.611 21.405,32.851 L21.405,24.591 ZM29.665,24.591 C29.665,23.830 29.048,23.215 28.288,23.215 C27.528,23.215 26.911,23.830 26.911,24.591 L26.911,32.851 C26.911,33.611 27.528,34.228 28.288,34.228 C29.048,34.228 29.665,33.611 29.665,32.851 L29.665,24.591 Z"/>
+    </symbol>
+    <symbol id="icon-laptop">
+      <title>laptop</title>
+      <path fill-rule="evenodd" d="M36.954,34.534 L4.666,34.534 C3.180,34.534 0.630,33.329 0.630,31.843 C0.630,30.357 1.834,29.152 3.320,29.152 L38.300,29.152 C39.786,29.152 40.991,30.357 40.991,31.843 C40.991,33.329 38.440,34.534 36.954,34.534 ZM24.846,31.843 L16.774,31.843 C16.031,31.843 15.429,32.144 15.429,32.516 C15.429,32.887 16.031,33.189 16.774,33.189 L24.846,33.189 C25.589,33.189 26.192,32.887 26.192,32.516 C26.192,32.144 25.589,31.843 24.846,31.843 ZM15.565,14.781 L18.048,17.275 L26.050,9.237 C26.573,8.711 27.421,8.711 27.944,9.237 L29.839,11.139 C30.362,11.665 30.362,12.517 29.839,13.042 L19.421,23.506 C18.972,23.957 18.295,23.997 17.778,23.675 C17.338,23.784 16.856,23.689 16.512,23.343 L11.777,18.587 C11.254,18.061 11.254,17.210 11.777,16.684 L13.671,14.781 C14.194,14.256 15.042,14.256 15.565,14.781 ZM34.264,4.936 L7.356,4.936 L7.356,26.462 L3.320,26.462 L3.320,23.771 L3.568,23.771 C3.417,23.348 3.320,22.900 3.320,22.426 L3.320,4.936 C3.320,2.707 5.127,0.900 7.356,0.900 L34.264,0.900 C36.493,0.900 38.300,2.707 38.300,4.936 L38.300,22.426 C38.300,22.900 38.203,23.348 38.053,23.771 L38.300,23.771 L38.300,26.462 L34.264,26.462 L34.264,4.936 Z"/>
+    </symbol>
+    <symbol id="icon-loked">
+      <title>loked</title>
+      <path fill-rule="evenodd" d="M25.184,37.965 L4.185,37.965 C2.252,37.965 0.685,36.398 0.685,34.465 L0.685,21.633 C0.685,19.699 2.252,18.132 4.185,18.132 L5.352,18.132 L5.352,8.799 C5.352,4.289 9.530,0.633 14.685,0.633 C19.839,0.633 24.018,4.289 24.018,8.799 L24.018,18.132 L25.184,18.132 C27.117,18.132 28.684,19.699 28.684,21.633 L28.684,34.465 C28.684,36.398 27.117,37.965 25.184,37.965 ZM19.351,8.799 C19.351,6.867 17.262,5.299 14.685,5.299 C12.108,5.299 10.018,6.867 10.018,8.799 L10.018,16.965 C10.018,17.377 10.130,17.766 10.304,18.132 L19.065,18.132 C19.239,17.766 19.351,17.377 19.351,16.965 L19.351,8.799 ZM14.685,21.633 C12.108,21.633 10.018,23.722 10.018,26.298 C10.018,28.021 10.963,29.509 12.352,30.318 L12.352,32.131 C12.352,33.421 13.396,34.465 14.685,34.465 C15.974,34.465 17.018,33.421 17.018,32.131 L17.018,30.318 C18.407,29.509 19.351,28.021 19.351,26.298 C19.351,23.722 17.262,21.633 14.685,21.633 Z"/>     
+    </symbol>
+  </defs>
+</svg>
+
+
+  <!-- HEADER -->
+  <header class="header" id="home">
+    <div class="container">
+      <div class="l-header-top-line">
+        <div>
+          <a class="logo" href="">Golden</a>
+        </div>
+        <div>
+          <!-- Mobile toggle -->
+          <div class="menu-toggle">
+            <div class="toggle-icon"></div>
+          </div>
+          <nav class="main-menu js-menu_hide secondary-font">
+            <ul class="menu-list">
+              <li class="menu-item"><a href="#home" class="menu-link">Home</a></li>
+              <li class="menu-item"><a href="#services" class="menu-link">Services</a></li>
+              <li class="menu-item"><a href="#portfolio" class="menu-link">Portfolio</a></li>
+              <li class="menu-item"><a href="#about" class="menu-link">About</a></li>
+              <li class="menu-item"><a href="#contact" class="menu-link">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+      <div class="l-header-main-heading">
+        <div>
+          <div class="main-heading-block secondary-font">
+            <h1 class="main-heading">Welcome To Our Studio!</h1>
+            <h2 class="sub-main-heading">It’s nice to meet you</h2>
+            <a href="#services" class="link-info js-hover">Tell me more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+<!-- Services section -->
+  <div class="services-section" id="services">
+    <div class="container">
+      <div class="l-center">
+        <div>
+          <div class="section-heading-block">
+            <h3 class="section-title secondary-font">Services</h3>
+            <p class="section-description primary-font">Voluptatem minus dolorum ab labore quisquam quos.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="services-list">
+        <div class="l-services-list">
+          <div>
+            <div class="services-item item-1">
+              <span class="services-icon-wrap">
+                <svg class="icon"><use xlink:href="#icon-basket"/></svg>
+              </span>
+              <h2 class="services-item-title secondary-font">E-Commerce</h2>
+              <p class="services-txt primary-font">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat ullam optio at, ex?</p>
+            </div>
+          </div>
+          <div>
+            <div class="services-item item-2">
+              <span class="services-icon-wrap">
+                <svg class="icon"><use xlink:href="#icon-laptop"/></svg>
+                </span>
+              <h2 class="services-item-title secondary-font">Resposnsive Web</h2>
+              <p class="services-txt primary-font">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore odit aliquid, labore vero.</p>
+            </div>
+          </div>
+          <div>
+            <div class="services-item item-3">
+              <span class="services-icon-wrap">
+                <svg class="icon"><use xlink:href="#icon-loked"/></svg>
+                </span>
+              <h2 class="services-item-title secondary-font">Web Security</h2>
+              <p class="services-txt primary-font">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis dolores qui maxime numquam!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Portfolio section -->
+  <div class="portfolio-section" id="portfolio"> 
+    <div class="container">
+      
+    <div class="l-center">
+      <div>
+        <div class="section-heading-block">
+          <h3 class="section-title secondary-font">Our portfolio</h3>
+          <p class="section-description primary-font">Lorem ipsum dolor sit amet, consectetur.</p>
+        </div>
+      </div>
+    </div>
+    <div class="portfolio-works-list">
+      <div class="l-portfolio-list">
+        <div>
+          <div class="works-item">
+            <img src="assets/images/image1.jpg" alt="" class="works-img">
+            <h2 class="works-name secondary-font">Ebony & Ivory</h2>
+            <p class="works-category primary-font">Branding</p>
+            <p class="item-description secondary-font">
+              Success doesn't come to you... you go to it
+            </p>  
+          </div>
+        </div>
+        <div>
+          <div class="works-item">
+            <img src="assets/images/image2.jpg" alt="" class="works-img">
+            <h2 class="works-name secondary-font">Clever Poster</h2>
+            <p class="works-category primary-font">Print Design</p>
+            <p class="item-description secondary-font">
+              Success doesn't come to you... you go to it
+            </p>
+          </div>
+        </div>
+        <div>
+          <div class="works-item">
+            <img src="assets/images/image3.jpg" alt="" class="works-img">
+            <h2 class="works-name secondary-font">Smart Stationary</h2>
+            <p class="works-category primary-font">Print Design</p>
+            <p class="item-description secondary-font">
+              Success doesn't come to you... you go to it
+            </p>
+          </div>
+        </div>
+        <div>
+          <div class="works-item">
+            <img src="assets/images/image4.jpg" alt="" class="works-img">
+            <h2 class="works-name secondary-font">Treehouse Template</h2>
+            <p class="works-category primary-font">Web Design</p>
+            <p class="item-description secondary-font">
+              Success doesn't come to you... you go to it
+            </p>
+          </div>
+        </div>
+        <div>
+          <div class="works-item">
+            <img src="assets/images/image5.jpg" alt="" class="works-img">
+            <h2 class="works-name secondary-font">Burned Logo</h2>
+            <p class="works-category primary-font">Branding</p>
+            <p class="item-description secondary-font">
+              Success doesn't come to you... you go to it
+            </p>
+          </div>
+        </div>
+        <div>
+          <div class="works-item">
+            <img src="assets/images/image6.jpg" alt="" class="works-img">
+            <h2 class="works-name secondary-font">Vinyl Record</h2>
+            <p class="works-category primary-font">Product Mock-Up</p>
+            <p class="item-description secondary-font">
+              Success doesn't come to you... you go to it
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+<!-- About Us section -->
+  <div class="about-us-section" id="about">
+    <div class="container">
+      <div class="l-center">
+        <div>
+          <div class="section-heading-block">
+            <h3 class="section-title secondary-font">About us</h3>
+            <p class="section-description primary-font">Lorem ipsum dolor sit amet.</p>
+          </div>
+        </div>
+      </div>
+      <div class="about-us-event-list">
+         
+            <div class="event-item">
+              <div class="event-img-wrap">
+                <img src="assets/images/event-img1.jpg" alt="" class="event-img">
+              </div>
+              <article class="event-info">
+                <strong class="event-date secondary-font">July 2010</strong>
+                <h2 class="event-title secondary-font">Our Humble Beginnings</h2>
+                <p class="event-txt primary-font">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt. Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit.</p>
+              </article>
+            </div>
+          
+            <div class="event-item">
+              <div class="event-img-wrap">
+                <img src="assets/images/event-img2.jpg" alt="" class="event-img">
+              </div>
+              <article class="event-info">
+                <strong class="event-date secondary-font">January 2011</strong>
+                <h2 class="event-title secondary-font">Facing Startup Battles</h2>
+                <p class="event-txt primary-font">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt. Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit.</p>
+              </article>
+            </div>
+          
+            <div class="event-item">
+              <div class="event-img-wrap">
+                <img src="assets/images/event-img3.jpg" alt="" class="event-img">
+              </div>
+              <article class="event-info">
+                <strong class="event-date secondary-font">Desember 2012</strong>
+                <h2 class="event-title secondary-font">Enter The Dark Days</h2>
+                <p class="event-txt primary-font">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt. Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit.</p>
+              </article>
+            </div>
+          
+            <div class="event-item">
+              <div class="event-img-wrap">
+                <img src="assets/images/event-img4.jpg" alt="" class="event-img">
+              </div>
+              <article class="event-info">
+                <strong class="event-date secondary-font">February 2014</strong>
+                <h2 class="event-title secondary-font">Our Triumph</h2>
+                <p class="event-txt primary-font">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt. Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit.</p>
+              </article>
+            </div>
+            <span class="event-show-more secondary-font">Our<br> story<br> continues<br> ...</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Our team -->
+  <div class="our-team-section">
+    <div class="container">
+      <div class="l-center">
+        <div>
+          <div class="section-heading-block">
+            <h3 class="section-title secondary-font">Our amazing team</h3>
+            <p class="section-description primary-font">Lorem ipsum dolor sit amet.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="team-members-list">
+        <div class="l-team-members-list">
+        <div>
+        <div class="member">
+          <img src="assets/images/man-1.jpg" alt="" class="member-img">
+          <p class="member-name secondary-font">Robert Nevil</p>
+          <p class="member-profession primary-font">Marketer</p>
+          <div class="socials-list">
+            <a href="#" class="social-link"><svg class="icon"><use xlink:href="#icon-twitter"/></svg></a>
+            <a href="#" class="social-link"><svg class="icon"><use xlink:href="#icon-facebook"/></svg></a>
+            <a href="#" class="social-link"><svg class="icon"><use xlink:href="#icon-pinterest"/></svg></a>
+          </div>
+        </div>
+        </div>
+        <div>
+        <div class="member">
+          <img src="assets/images/man-3.jpg" alt="" class="member-img">
+          <p class="member-name secondary-font">Rico Massimo</p>
+          <p class="member-profession primary-font">Coder</p>
+          <div class="socials-list">
+            <a href="" class="social-link"><svg class="icon"><use xlink:href="#icon-twitter"/></svg></a>
+            <a href="" class="social-link"><svg class="icon"><use xlink:href="#icon-facebook"/></svg></a>
+            <a href="" class="social-link"><svg class="icon"><use xlink:href="#icon-gplus"/></svg></a>
+          </div>
+        </div>
+        </div>
+        <div>
+        <div class="member">
+          <img src="assets/images/man.jpg" alt="" class="member-img">
+          <p class="member-name secondary-font">Uku Mason</p>
+          <p class="member-profession primary-font">Graphic Designer</p>
+          <div class="socials-list">
+            <a href="" class="social-link"><svg class="icon"><use xlink:href="#icon-facebook"/></svg></a>
+            <a href="" class="social-link"><svg class="icon"><use xlink:href="#icon-pinterest"/></svg></a>
+          </div>
+        </div>
+        </div>
+        </div>
+      </div>
+      <p class="our-team-txt primary-font">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa commodi fugit.</p>
+    </div>
+  </div>
+  <!-- Partners section -->
+  <div class="partners-section">
+    <div class="container">
+      <div class="partners-logos">
+        <div class="partner-logo"></div>
+        <div class="partner-logo"></div>
+        <div class="partner-logo"></div>
+        <div class="partner-logo"></div>
+      </div>
+    </div>
+  </div>
+  <!-- Contact section -->
+  <div class="feedback-section" id="contact">
+    <div class="container">
+      
+    <div class="l-center">
+      <div class="section-heading-block">
+        <h3 class="section-title secondary-font">Contact us</h3>
+        <p class="section-description primary-font">Lorem ipsum dolor sit amet, consectetur.</p>
+      </div>
+    </div>
+  <form class="feedback-form secondary-font" action="mail.php">
+    <div class="l-feedback-form">
+      <div>
+        <input type="text" placeholder="YOUR NAME*">
+        <input type="email" placeholder="YOUR E-MAIL*">
+        <input type="text" placeholder="SUBJECT">
+      </div>
+      <div>
+        <textarea placeholder="YOUR MESSAGE*"></textarea>
+      </div>
+      <div>
+        <button class="send-btn js-hover" type="submit">Send message</button>
+      </div>
+    </div>
+  </form>
+    </div>
+  </div>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="l-footer">
+        <div>
+          <p class="copy">&copy; Copyright 2014 <a href="">FreebiesXpress.com</a></p>
+        </div>
+        <div>
+          <div class="footer-socials-list socials-list">
+            <a href="" class="social-link"><svg class="icon"><use xlink:href="#icon-twitter"/></svg></a>
+            <a href="" class="social-link"><svg class="icon"><use xlink:href="#icon-facebook"/></svg></a>
+            <a href="" class="social-link"><svg class="icon"><use xlink:href="#icon-pinterest"/></svg></a>
+            <a href="" class="social-link"><svg class="icon"><use xlink:href="#icon-gplus"/></svg></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="src/libs/es5-shim.min.js"></script>
+  <script src="assets/js/action.js"></script>
+
+</body>
+</html>
