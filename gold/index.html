@@ -8,17 +8,21 @@
   <title>Gold - start page</title> <!-- maxLength = 65 -->
 
   <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Great+Vibes|Montserrat:300,400,500,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/libs/animate.min.css">
   <link rel="stylesheet" href="assets/styles/normalize.min.css">
-  <link rel="stylesheet" href="assets/styles/style.css">
+  <link rel="stylesheet" href="assets/styles/style.min.css">
   
   <!--[if IE]>
-    IF IE < 9 version.
-    <style>
-    </style>
-    If need respond.js;
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
   <![endif]-->
-  <style>
-  </style>
+  <script src="assets/libs/wow.min.js"></script>
+  <script>
+      wow = new WOW({
+    // Options 
+      });
+      wow.init();
+  </script>
 </head>
 <body>
   <!-- SVG icons -->
@@ -61,7 +65,7 @@
     <div class="container">
       <div class="l-header-top-line">
         <div>
-          <a class="logo" href="">Golden</a>
+          <a class="logo wow fadeInDown" data-wow-delay=".3s" href="">Golden</a>
         </div>
         <div>
           <!-- Mobile toggle -->
@@ -70,11 +74,11 @@
           </div>
           <nav class="main-menu js-menu_hide secondary-font">
             <ul class="menu-list">
-              <li class="menu-item"><a href="#home" class="menu-link">Home</a></li>
-              <li class="menu-item"><a href="#services" class="menu-link">Services</a></li>
-              <li class="menu-item"><a href="#portfolio" class="menu-link">Portfolio</a></li>
-              <li class="menu-item"><a href="#about" class="menu-link">About</a></li>
-              <li class="menu-item"><a href="#contact" class="menu-link">Contact</a></li>
+              <li class="menu-item"><a href="#home" class="menu-link wow fadeInDown" data-wow-delay="0.3s">Home</a></li>
+              <li class="menu-item"><a href="#services" class="menu-link wow fadeInDown" data-wow-delay="0.4s">Services</a></li>
+              <li class="menu-item"><a href="#portfolio" class="menu-link wow fadeInDown" data-wow-delay ="0.5s">Portfolio</a></li>
+              <li class="menu-item"><a href="#about" class="menu-link wow fadeInDown" data-wow-delay ="0.6s">About</a></li>
+              <li class="menu-item"><a href="#contact" class="menu-link wow fadeInDown" data-wow-delay ="0.7s">Contact</a></li>
             </ul>
           </nav>
         </div>
@@ -82,10 +86,10 @@
 
       <div class="l-header-main-heading">
         <div>
-          <div class="main-heading-block secondary-font">
-            <h1 class="main-heading">Welcome To Our Studio!</h1>
-            <h2 class="sub-main-heading">It’s nice to meet you</h2>
-            <a href="#services" class="link-info js-hover">Tell me more</a>
+          <div class="main-heading-block secondary-font ">
+            <h1 class="main-heading wow fadeInUp" data-wow-delay=".3s">Welcome To Our Studio!</h1>
+            <h2 class="sub-main-heading wow fadeInDown" data-wow-delay=".3s">It’s nice to meet you</h2>
+            <a href="#services" class="link-info wow infinite pulse js-hover">Tell me more</a>
           </div>
         </div>
       </div>
@@ -96,7 +100,7 @@
     <div class="container">
       <div class="l-center">
         <div>
-          <div class="section-heading-block">
+          <div class="section-heading-block wow zoomIn">
             <h3 class="section-title secondary-font">Services</h3>
             <p class="section-description primary-font">Voluptatem minus dolorum ab labore quisquam quos.</p>
           </div>
@@ -106,7 +110,7 @@
       <div class="services-list">
         <div class="l-services-list">
           <div>
-            <div class="services-item item-1">
+            <div class="services-item item-1 wow fadeInLeft slow">
               <span class="services-icon-wrap">
                 <svg class="icon"><use xlink:href="#icon-basket"/></svg>
               </span>
@@ -115,7 +119,7 @@
             </div>
           </div>
           <div>
-            <div class="services-item item-2">
+            <div class="services-item item-2 wow fadeInUp slow">
               <span class="services-icon-wrap">
                 <svg class="icon"><use xlink:href="#icon-laptop"/></svg>
                 </span>
@@ -124,7 +128,7 @@
             </div>
           </div>
           <div>
-            <div class="services-item item-3">
+            <div class="services-item item-3 wow fadeInRight slow" data-wow-delay=".3s">
               <span class="services-icon-wrap">
                 <svg class="icon"><use xlink:href="#icon-loked"/></svg>
                 </span>
@@ -142,7 +146,7 @@
       
     <div class="l-center">
       <div>
-        <div class="section-heading-block">
+        <div class="section-heading-block wow zoomIn">
           <h3 class="section-title secondary-font">Our portfolio</h3>
           <p class="section-description primary-font">Lorem ipsum dolor sit amet, consectetur.</p>
         </div>
@@ -151,60 +155,60 @@
     <div class="portfolio-works-list">
       <div class="l-portfolio-list">
         <div>
-          <div class="works-item">
+          <div class="works-item wow fadeInUp">
             <img src="assets/images/image1.jpg" alt="" class="works-img">
-            <h2 class="works-name secondary-font">Ebony & Ivory</h2>
-            <p class="works-category primary-font">Branding</p>
+            <h2 class="works-name secondary-font wow fadeInUp" data-wow-delay=".4s">Ebony & Ivory</h2>
+            <p class="works-category primary-font wow fadeInUp" data-wow-delay=".6s">Branding</p>
             <p class="item-description secondary-font">
               Success doesn't come to you... you go to it
             </p>  
           </div>
         </div>
         <div>
-          <div class="works-item">
+          <div class="works-item wow fadeInUp" data-wow-delay='.2s'>
             <img src="assets/images/image2.jpg" alt="" class="works-img">
-            <h2 class="works-name secondary-font">Clever Poster</h2>
-            <p class="works-category primary-font">Print Design</p>
+            <h2 class="works-name secondary-font wow fadeInUp" data-wow-delay=".6s">Clever Poster</h2>
+            <p class="works-category primary-font wow fadeInUp" data-wow-delay=".8s">Print Design</p>
             <p class="item-description secondary-font">
               Success doesn't come to you... you go to it
             </p>
           </div>
         </div>
         <div>
-          <div class="works-item">
+          <div class="works-item wow fadeInUp" data-wow-delay=".4s">
             <img src="assets/images/image3.jpg" alt="" class="works-img">
-            <h2 class="works-name secondary-font">Smart Stationary</h2>
-            <p class="works-category primary-font">Print Design</p>
+            <h2 class="works-name secondary-font wow fadeInUp" data-wow-delay=".8s">Smart Stationary</h2>
+            <p class="works-category primary-font wow fadeInUp" data-wow-delay="1s">Print Design</p>
             <p class="item-description secondary-font">
               Success doesn't come to you... you go to it
             </p>
           </div>
         </div>
         <div>
-          <div class="works-item">
+          <div class="works-item wow fadeInUp">
             <img src="assets/images/image4.jpg" alt="" class="works-img">
-            <h2 class="works-name secondary-font">Treehouse Template</h2>
-            <p class="works-category primary-font">Web Design</p>
+            <h2 class="works-name secondary-font wow fadeInUp" data-wow-delay=".4s">Treehouse Template</h2>
+            <p class="works-category primary-font wow fadeInUp" data-wow-delay=".6s">Web Design</p>
             <p class="item-description secondary-font">
               Success doesn't come to you... you go to it
             </p>
           </div>
         </div>
         <div>
-          <div class="works-item">
+          <div class="works-item wow fadeInUp" data-wow-delay=".2s">
             <img src="assets/images/image5.jpg" alt="" class="works-img">
-            <h2 class="works-name secondary-font">Burned Logo</h2>
-            <p class="works-category primary-font">Branding</p>
+            <h2 class="works-name secondary-font wow fadeInUp" data-wow-delay="0.6s">Burned Logo</h2>
+            <p class="works-category primary-font wow fadeInUp" data-wow-delay="0.8s">Branding</p>
             <p class="item-description secondary-font">
               Success doesn't come to you... you go to it
             </p>
           </div>
         </div>
         <div>
-          <div class="works-item">
+          <div class="works-item wow fadeInUp" data-wow-delay=".4s">
             <img src="assets/images/image6.jpg" alt="" class="works-img">
-            <h2 class="works-name secondary-font">Vinyl Record</h2>
-            <p class="works-category primary-font">Product Mock-Up</p>
+            <h2 class="works-name secondary-font wow fadeInUp" data-wow-delay="0.8s">Vinyl Record</h2>
+            <p class="works-category primary-font wow fadeInUp" data-wow-delay="1s">Product Mock-Up</p>
             <p class="item-description secondary-font">
               Success doesn't come to you... you go to it
             </p>
@@ -219,7 +223,7 @@
     <div class="container">
       <div class="l-center">
         <div>
-          <div class="section-heading-block">
+          <div class="section-heading-block wow zoomIn">
             <h3 class="section-title secondary-font">About us</h3>
             <p class="section-description primary-font">Lorem ipsum dolor sit amet.</p>
           </div>
@@ -228,10 +232,10 @@
       <div class="about-us-event-list">
          
             <div class="event-item">
-              <div class="event-img-wrap">
+              <div class="event-img-wrap wow zoomIn">
                 <img src="assets/images/event-img1.jpg" alt="" class="event-img">
               </div>
-              <article class="event-info">
+              <article class="event-info wow fadeInLeft">
                 <strong class="event-date secondary-font">July 2010</strong>
                 <h2 class="event-title secondary-font">Our Humble Beginnings</h2>
                 <p class="event-txt primary-font">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt. Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit.</p>
@@ -239,10 +243,10 @@
             </div>
           
             <div class="event-item">
-              <div class="event-img-wrap">
+              <div class="event-img-wrap wow zoomIn">
                 <img src="assets/images/event-img2.jpg" alt="" class="event-img">
               </div>
-              <article class="event-info">
+              <article class="event-info wow fadeInRight">
                 <strong class="event-date secondary-font">January 2011</strong>
                 <h2 class="event-title secondary-font">Facing Startup Battles</h2>
                 <p class="event-txt primary-font">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt. Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit.</p>
@@ -250,10 +254,10 @@
             </div>
           
             <div class="event-item">
-              <div class="event-img-wrap">
+              <div class="event-img-wrap wow zoomIn">
                 <img src="assets/images/event-img3.jpg" alt="" class="event-img">
               </div>
-              <article class="event-info">
+              <article class="event-info wow fadeInLeft">
                 <strong class="event-date secondary-font">Desember 2012</strong>
                 <h2 class="event-title secondary-font">Enter The Dark Days</h2>
                 <p class="event-txt primary-font">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt. Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit.</p>
@@ -261,16 +265,16 @@
             </div>
           
             <div class="event-item">
-              <div class="event-img-wrap">
+              <div class="event-img-wrap wow zoomIn">
                 <img src="assets/images/event-img4.jpg" alt="" class="event-img">
               </div>
-              <article class="event-info">
+              <article class="event-info wow fadeInRight">
                 <strong class="event-date secondary-font">February 2014</strong>
                 <h2 class="event-title secondary-font">Our Triumph</h2>
                 <p class="event-txt primary-font">Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt. Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit.</p>
               </article>
             </div>
-            <span class="event-show-more secondary-font">Our<br> story<br> continues<br> ...</span>
+            <span class="event-show-more secondary-font wow zoomIn">Our<br> story<br> continues<br> ...</span>
       </div>
     </div>
   </div>
@@ -280,7 +284,7 @@
     <div class="container">
       <div class="l-center">
         <div>
-          <div class="section-heading-block">
+          <div class="section-heading-block wow zoomIn">
             <h3 class="section-title secondary-font">Our amazing team</h3>
             <p class="section-description primary-font">Lorem ipsum dolor sit amet.</p>
           </div>
@@ -291,10 +295,10 @@
         <div class="l-team-members-list">
         <div>
         <div class="member">
-          <img src="assets/images/man-1.jpg" alt="" class="member-img">
-          <p class="member-name secondary-font">Robert Nevil</p>
-          <p class="member-profession primary-font">Marketer</p>
-          <div class="socials-list">
+          <img src="assets/images/man-1.jpg" alt="" class="member-img wow flipInY slow">
+          <p class="member-name secondary-font wow fadeInUp" data-wow-delay=".3s">Robert Nevil</p>
+          <p class="member-profession primary-font wow fadeInUp" data-wow-delay=".3s">Marketer</p>
+          <div class="socials-list wow fadeInUp" data-wow-delay=".5s">
             <a href="#" class="social-link"><svg class="icon"><use xlink:href="#icon-twitter"/></svg></a>
             <a href="#" class="social-link"><svg class="icon"><use xlink:href="#icon-facebook"/></svg></a>
             <a href="#" class="social-link"><svg class="icon"><use xlink:href="#icon-pinterest"/></svg></a>
@@ -303,10 +307,10 @@
         </div>
         <div>
         <div class="member">
-          <img src="assets/images/man-3.jpg" alt="" class="member-img">
-          <p class="member-name secondary-font">Rico Massimo</p>
-          <p class="member-profession primary-font">Coder</p>
-          <div class="socials-list">
+          <img src="assets/images/man-3.jpg" alt="" class="member-img wow flipInY slow">
+          <p class="member-name secondary-font wow fadeInUp" data-wow-delay=".3s">Rico Massimo</p>
+          <p class="member-profession primary-font wow fadeInUp" data-wow-delay=".3s">Coder</p>
+          <div class="socials-list wow fadeInUp" data-wow-delay=".5s">
             <a href="" class="social-link"><svg class="icon"><use xlink:href="#icon-twitter"/></svg></a>
             <a href="" class="social-link"><svg class="icon"><use xlink:href="#icon-facebook"/></svg></a>
             <a href="" class="social-link"><svg class="icon"><use xlink:href="#icon-gplus"/></svg></a>
@@ -315,10 +319,10 @@
         </div>
         <div>
         <div class="member">
-          <img src="assets/images/man.jpg" alt="" class="member-img">
-          <p class="member-name secondary-font">Uku Mason</p>
-          <p class="member-profession primary-font">Graphic Designer</p>
-          <div class="socials-list">
+          <img src="assets/images/man.jpg" alt="" class="member-img wow flipInY slow">
+          <p class="member-name secondary-font wow fadeInUp" data-wow-delay=".3s">Uku Mason</p>
+          <p class="member-profession primary-font wow fadeInUp" data-wow-delay=".3s">Graphic Designer</p>
+          <div class="socials-list wow fadeInUp" data-wow-delay=".5s">
             <a href="" class="social-link"><svg class="icon"><use xlink:href="#icon-facebook"/></svg></a>
             <a href="" class="social-link"><svg class="icon"><use xlink:href="#icon-pinterest"/></svg></a>
           </div>
@@ -326,17 +330,17 @@
         </div>
         </div>
       </div>
-      <p class="our-team-txt primary-font">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa commodi fugit.</p>
+      <p class="our-team-txt primary-font wow fadeIn">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa commodi fugit.</p>
     </div>
   </div>
   <!-- Partners section -->
   <div class="partners-section">
     <div class="container">
       <div class="partners-logos">
-        <div class="partner-logo"></div>
-        <div class="partner-logo"></div>
-        <div class="partner-logo"></div>
-        <div class="partner-logo"></div>
+        <div class="partner-logo wow fadeInDown" data-wow-delay=".2s"></div>
+        <div class="partner-logo wow fadeInDown" data-wow-delay=".4s"></div>
+        <div class="partner-logo wow fadeInDown" data-wow-delay=".6s"></div>
+        <div class="partner-logo wow fadeInDown" data-wow-delay=".8s"></div>
       </div>
     </div>
   </div>
@@ -345,7 +349,7 @@
     <div class="container">
       
     <div class="l-center">
-      <div class="section-heading-block">
+      <div class="section-heading-block wow zoomIn">
         <h3 class="section-title secondary-font">Contact us</h3>
         <p class="section-description primary-font">Lorem ipsum dolor sit amet, consectetur.</p>
       </div>
@@ -353,15 +357,15 @@
   <form class="feedback-form secondary-font" action="mail.php">
     <div class="l-feedback-form">
       <div>
-        <input type="text" placeholder="YOUR NAME*">
-        <input type="email" placeholder="YOUR E-MAIL*">
-        <input type="text" placeholder="SUBJECT">
+        <input type="text" class="wow fadeInLeft" data-wow-duration=".2s" placeholder="YOUR NAME*">
+        <input type="email" class="wow fadeInLeft" data-wow-duration=".4s" placeholder="YOUR E-MAIL*">
+        <input type="text" class="wow fadeInLeft" data-wow-duration=".6s" placeholder="SUBJECT">
       </div>
       <div>
-        <textarea placeholder="YOUR MESSAGE*"></textarea>
+        <textarea placeholder="YOUR MESSAGE*" class="wow fadeInRight"></textarea>
       </div>
       <div>
-        <button class="send-btn js-hover" type="submit">Send message</button>
+        <button class="send-btn js-hover wow zoomIn" type="submit">Send message</button>
       </div>
     </div>
   </form>
@@ -372,10 +376,10 @@
     <div class="container">
       <div class="l-footer">
         <div>
-          <p class="copy">&copy; Copyright 2014 <a href="">FreebiesXpress.com</a></p>
+          <p class="copy wow zoomIn">&copy; Copyright 2014 <a href="" class="footer-link">FreebiesXpress.com</a></p>
         </div>
         <div>
-          <div class="footer-socials-list socials-list">
+          <div class="footer-socials-list socials-list wow zoomIn">
             <a href="" class="social-link"><svg class="icon"><use xlink:href="#icon-twitter"/></svg></a>
             <a href="" class="social-link"><svg class="icon"><use xlink:href="#icon-facebook"/></svg></a>
             <a href="" class="social-link"><svg class="icon"><use xlink:href="#icon-pinterest"/></svg></a>
@@ -385,8 +389,6 @@
       </div>
     </div>
   </footer>
-  <script src="src/libs/es5-shim.min.js"></script>
-  <script src="assets/js/action.js"></script>
-
+  <script src="assets/js/action.min.js"></script>
 </body>
 </html>
