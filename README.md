@@ -1,3 +1,3 @@
-h1Yuriy Hrub
+Yuriy Hrub
 -----------------------------
 Верстка PSD шаблонов с использованием HTML/CSS и JavaScript 
