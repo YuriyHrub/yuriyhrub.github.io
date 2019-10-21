@@ -1,2 +1,2 @@
-# yuriyhrub.github.io
+#Yuriy Hrub
 Верстка PSD шаблонов с использованием HTML/CSS и JavaScript 
