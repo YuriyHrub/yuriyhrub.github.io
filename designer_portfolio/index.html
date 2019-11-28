@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge"> <!-- special for IE -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Site Description............."> <!-- maxLength = 150 -->
+  <meta name="author" content="Yuriy Hrub">
+  <title>Portfolio of some designer</title> <!-- maxLength = 65 -->
+  
+  <!-- Google fonts must be here -->
+  <link href="https://fonts.googleapis.com/css?family=Prompt:300,400,600,700%7COpen+Sans:300,400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="build/libs/normalize.min.css">
+  <link rel="stylesheet" href="build/css/style.min.css">
+  <script>
+    var doc = document.documentElement;
+    doc.setAttribute('data-useragent', navigator.userAgent);
+  </script>
+</head>
+
+<body>
+  <!-- SVG -->
+  <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+      <symbol id="icon-logo" viewBox="0 0 30 28">
+        <title>Logo</title>
+        <defs>
+          <linearGradient id="PSgrad_0" x1="0%" x2="5.234%" y1="99.863%" y2="0%">
+            <stop offset="0%" stop-color="rgb(15,51,255)" stop-opacity="1" />
+            <stop offset="76%" stop-color="rgb(7,210,179)" stop-opacity="1" />
+          </linearGradient>
+
+        </defs>
+        <path fill-rule="evenodd"  fill="rgb(57, 21, 87)"
+        d="M27.941,18.703 C26.804,18.703 25.882,17.505 25.882,16.027 L25.882,12.986 C25.882,11.508 26.804,10.309 27.941,10.309 C29.078,10.309 30.000,11.508 30.000,12.986 L30.000,16.027 C30.000,17.505 29.078,18.703 27.941,18.703 ZM21.471,22.969 C20.334,22.969 19.412,21.771 19.412,20.292 L19.412,8.706 C19.412,7.228 20.334,6.029 21.471,6.029 C22.608,6.029 23.529,7.228 23.529,8.706 L23.529,20.292 C23.529,21.771 22.608,22.969 21.471,22.969 ZM15.000,28.000 C13.861,28.000 12.938,27.077 12.938,25.937 L12.938,2.062 C12.938,0.923 13.861,-0.000 15.000,-0.000 C16.139,-0.000 17.063,0.923 17.063,2.062 L17.063,25.937 C17.063,27.077 16.139,28.000 15.000,28.000 ZM8.529,22.969 C7.392,22.969 6.471,21.771 6.471,20.292 L6.471,8.706 C6.471,7.228 7.392,6.029 8.529,6.029 C9.666,6.029 10.588,7.228 10.588,8.706 L10.588,20.292 C10.588,21.771 9.666,22.969 8.529,22.969 ZM2.059,18.703 C0.922,18.703 -0.000,17.505 -0.000,16.027 L-0.000,12.986 C-0.000,11.508 0.922,10.309 2.059,10.309 C3.196,10.309 4.118,11.508 4.118,12.986 L4.118,16.027 C4.118,17.505 3.196,18.703 2.059,18.703 Z"/>
+        <path fill="url(#PSgrad_0)"
+        d="M27.941,18.703 C26.804,18.703 25.882,17.505 25.882,16.027 L25.882,12.986 C25.882,11.508 26.804,10.309 27.941,10.309 C29.078,10.309 30.000,11.508 30.000,12.986 L30.000,16.027 C30.000,17.505 29.078,18.703 27.941,18.703 ZM21.471,22.969 C20.334,22.969 19.412,21.771 19.412,20.292 L19.412,8.706 C19.412,7.228 20.334,6.029 21.471,6.029 C22.608,6.029 23.529,7.228 23.529,8.706 L23.529,20.292 C23.529,21.771 22.608,22.969 21.471,22.969 ZM15.000,28.000 C13.861,28.000 12.938,27.077 12.938,25.937 L12.938,2.062 C12.938,0.923 13.861,-0.000 15.000,-0.000 C16.139,-0.000 17.063,0.923 17.063,2.062 L17.063,25.937 C17.063,27.077 16.139,28.000 15.000,28.000 ZM8.529,22.969 C7.392,22.969 6.471,21.771 6.471,20.292 L6.471,8.706 C6.471,7.228 7.392,6.029 8.529,6.029 C9.666,6.029 10.588,7.228 10.588,8.706 L10.588,20.292 C10.588,21.771 9.666,22.969 8.529,22.969 ZM2.059,18.703 C0.922,18.703 -0.000,17.505 -0.000,16.027 L-0.000,12.986 C-0.000,11.508 0.922,10.309 2.059,10.309 C3.196,10.309 4.118,11.508 4.118,12.986 L4.118,16.027 C4.118,17.505 3.196,18.703 2.059,18.703 Z"/>
+      </symbol>
+      
+      <symbol id="icon-check">
+        <path fill-rule="evenodd"
+         d="M18.951,2.808 L7.176,14.646 C7.073,14.750 6.905,14.750 6.801,14.646 L0.115,7.924 C0.012,7.820 0.012,7.651 0.115,7.547 L1.740,5.913 C1.844,5.809 2.012,5.809 2.115,5.913 L6.989,10.813 L16.952,0.797 C17.055,0.693 17.223,0.693 17.327,0.797 L18.951,2.430 C19.055,2.535 19.055,2.703 18.951,2.808 Z"/>
+      </symbol>
+    </defs>
+  </svg>
+
+  <!-- Site header -->
+  <header class="header">
+  <div class="container">
+    <div class="l-header">
+      
+      <div>
+        <a href="#home" class="logo primary-font"><span class="logo-icon"><svg class="icon"><use xlink:href="#icon-logo"/></svg></span>Global</a>
+      </div>
+      <div>
+        <div class="burger-menu">
+          <span></span>
+        </div>
+        <nav class="main-menu menu-hide">
+          <ul class="menu-list primary-font">
+            <li class="menu-item"><a href="#home" class="menu-link">Home</a></li>
+            <li class="menu-item"><a href="#works" class="menu-link">Works</a></li>
+            <li class="menu-item"><a href="#about" class="menu-link">About</a></li>
+            <li class="menu-item"><a href="#contact" class="menu-link">Contact</a></li>
+            <li class="menu-item"><a href="#hire-us" class="menu-link">Hire us</a></li>
+          </ul>
+        </nav>
+      </div>
+        <div class="nav-panel primary-font">
+          <ul class="nav-panel-list">
+            <li class="panel-item"><a href="#home" class="panel-link"><span class="link-num">01</span><span class="link-txt">Home</span></a></li>
+            <li class="panel-item"><a href="#works" class="panel-link"><span class="link-num">02</span><span class="link-txt">Works</span></a></li>
+            <li class="panel-item"><a href="#about" class="panel-link"><span class="link-num">03</span><span class="link-txt">About</span></a></li>
+            <li class="panel-item"><a href="#contact" class="panel-link"><span class="link-num">04</span><span class="link-txt">Contact</span></a></li>
+            <li class="panel-item"><a href="#hire-us" class="panel-link"><span class="link-num">05</span><span class="link-txt">Hire us</span></a></li>
+          </ul>
+        </div>
+    </div>
+    </div>
+    </header>
+    
+  <div class="container">
+    
+    <!-- Home -->
+  <section class="l-home-section home-section primary-font site-section" id="home">
+    <div>
+      <div class="home-heading-block">
+        <h1 class="home-heading">Your next interactive experience</h1>
+        <a href="#hire-us" class="feedback-btn feedback-btn-anim">Hire us</a>
+      </div>
+    </div>
+    <div>
+      <div class="l-home-tabs home-tabs">
+        <span class="tabs-toggle"></span>
+        <div>
+          <div class="tab">
+            <h4 class="tab-title">Metiew & smith</h4>
+            <p class="tab-txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          </div>
+        </div>
+        <div>
+          <div class="tab">
+            <h4 class="tab-title">Fantasy interactive</h4>
+            <p class="tab-txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          </div>
+        </div>
+        <div>
+          <div class="tab">
+            <h4 class="tab-title">Paul & shark</h4>
+            <p class="tab-txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Works -->
+  <section class="works-section site-section" id="works">
+    <div class="l-works">
+      <div>
+        <!-- Works slider -->
+        <h4 class="slider-title primary-font">Selected work</h4>
+
+        <div class="slider">
+          <div class="slider-wrapper">
+            <div class="slider-item">
+              <div class="item-inner-wrap">
+                <img src="build/img/slides/slide_1.jpg" alt="Slide_1">
+                <div class="slider-item-description primary-font">
+                  <h4 class="item-description-title">Alex Novak</h4>
+                  <p class="item-description-txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit, pariatur?</p>
+                </div>
+              </div>
+            </div>
+            <div class="slider-item">
+              <div class="item-inner-wrap">
+              <img src="build/img/slides/slide_2.jpg" alt="Slide_2">
+              <div class="slider-item-description primary-font">
+                <h4 class="item-description-title">Metiew & Smith</h4>
+                <p class="item-description-txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit, pariatur?</p>
+              </div>
+              </div>
+            </div>
+            <div class="slider-item">
+              <div class="item-inner-wrap">
+                
+              <img src="build/img/slides/slide_3.jpg" alt="Slide_3">
+              <div class="slider-item-description primary-font">
+                <h4 class="item-description-title">The victory</h4>
+                <p class="item-description-txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit, pariatur?</p>
+              </div>
+              </div>
+            </div>
+            <div class="slider-item">
+              <div class="item-inner-wrap">
+                
+              <img src="build/img/slides/slide_4.jpg" alt="Slide_1">
+              <div class="slider-item-description primary-font">
+                <h4 class="item-description-title">Alex Novak</h4>
+                <p class="item-description-txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit, pariatur?</p>
+              </div>
+              </div>
+            </div>
+            <div class="slider-item">
+              <div class="item-inner-wrap">
+                
+              <img src="build/img/slides/slide_5.jpg" alt="Slide_2">
+              <div class="slider-item-description primary-font">
+                <h4 class="item-description-title">Metiew & Smith</h4>
+                <p class="item-description-txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit, pariatur?</p>
+              </div>
+              </div>
+            </div>
+            <div class="slider-item">
+              <div class="item-inner-wrap">
+                
+              <img src="build/img/slides/slide_6.jpg" alt="Slide_3">
+              <div class="slider-item-description primary-font">
+                <h4 class="item-description-title">The victory</h4>
+                <p class="item-description-txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit, pariatur?</p>
+              </div>
+              </div>
+            </div>
+            <div class="slider-item">
+              <div class="item-inner-wrap">
+                
+              <img src="build/img/slides/slide_7.jpg" alt="Slide_1">
+              <div class="slider-item-description primary-font">
+                <h4 class="item-description-title">Alex Novak</h4>
+                <p class="item-description-txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit, pariatur?</p>
+              </div>
+              </div>
+            </div>
+          </div>
+          <!-- Slider buttons -->
+          <a href="#" role="button" class="slider-control slider-control-left"></a>
+          <a href="#" role="button" class="slider-control slider-control-right slider-control-show"></a>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Info -->
+  <section class="l-info-section info-section site-section" id="about">
+    <div>
+      <div class="info-heading-block primary-font">
+        <h2 class="info-heading">We believe in passionate people</h2>
+        <a href="#" class="info-btn">Career</a>
+      </div>
+    </div>
+    <div>
+      <div class="l-last-posts last-posts-preview primary-font">
+        <div>
+          <div class="post-wrap item-responsive">
+            <div class="post-preview-1 post-preview">
+              <h4 class="post-preview-title"><a href="#">Winners</a></h4>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="item-responsive">
+            <div class="post-preview-2 post-preview">
+              <h4 class="post-preview-title"><a href="#">Philosophy</a></h4>
+            </div>
+          </div>
+        </div>
+          <div>
+            <div class="item-responsive">
+              <div class="post-preview-3 post-preview">
+                <h4 class="post-preview-title"><a href="#">History</a></h4>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+  </section>
+  </div><!--CONTAINER END -->
+  <!-- Contact -->
+  <section class="contact-section site-section" id="contact">
+      <div id="map"></div>
+      <div class="pop-up-container">
+        <button class="pop-up-toggle primary-font"><span></span></button>
+        <div class="map-pop-up primary-font">
+          <address class="address">Sadova 21, Lviv, Ukraine</address>
+          <a href="#hire-us" class="mail">yuriyhrub@gmail.com</a>
+          <a href="#" class="tel">+38 093 111 22 33</a>
+          <a href="#"><img src="build/img/Behance.jpg" alt="Behance"></a>
+          <a href="#"><img src="build/img/dribble..jpg" alt="Drible"></a>
+          <a href="#hire-us" class="feedback-btn">Contact us</a>
+        </div>
+      </div>
+  </section>
+  <!-- Feedback -->
+  <div class="container">
+    <section class="feedback-section site-section" id="hire-us">
+      <form action="action.php" name="feedback" class="feedback-form primary-font">
+        <h3 class="form-title">You want us to do</h3>
+        <ul class="service-list">
+          <li class="service-item service-item-1"><label><span><svg class="icon icon-check"><use xlink:href="#icon-check"/></svg></span>App Design<input type="checkbox" name="app-design"></label></li>
+          <li class="service-item service-item-2"><label><span><svg class="icon icon-check"><use xlink:href="#icon-check"/></svg></span>Graphic Design<input type="checkbox" name="graphic-design"></label></li>
+          <li class="service-item service-item-3"><label><span><svg class="icon icon-check"><use xlink:href="#icon-check"/></svg></span>Motion Design<input type="checkbox" name="motion-design"></label></li>
+          <li class="service-item service-item-4"><label><span><svg class="icon icon-check"><use xlink:href="#icon-check"/></svg></span>UX Design<input type="checkbox" name="ux-design"></label></li>
+          <li class="service-item service-item-5"><label><span><svg class="icon icon-check"><use xlink:href="#icon-check"/></svg></span>Web Design<input type="checkbox" name="web-design"></label></li>
+          <li class="service-item service-item-6"><label><span><svg class="icon icon-check"><use xlink:href="#icon-check"/></svg></span>Marketing<input type="checkbox" name="marketing"></label></li>
+        </ul>
+        <input type="text" class="name" name="name" placeholder="Name">
+        <input type="email" class="email" name="email" placeholder="Email">
+        <input type="submit" class="send-btn" value="Send request">
+      </form>
+    </section>
+  </div>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB86wuTDCPFfzEtDlGf_8VZxZxSeojv_4w&callback=initMap&language=en" async defer></script>
+    <script src="build/js/action.min.js" defer></script>
+  </body>
+  </html>
+
