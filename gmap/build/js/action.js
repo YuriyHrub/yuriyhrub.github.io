@@ -5,7 +5,7 @@ function initMap() {
     lat: 49.842957,
     lng: 24.031111
   };
-  var markerIcon = 'src/img/location.svg'; //Путь прописывать от index.html
+  var markerIcon = 'build/img/location.svg'; //Путь прописывать от index.html
 
   var hideLabel = [{
     "elementType": "labels",
@@ -283,7 +283,7 @@ function initMap() {
   var navControl = document.createElement('div');
   var customNav = new MakeControl({
     classList: ['custom-control', 'nav-control'],
-    html: "<img src=\"src/img/compass.svg\">",
+    html: "<img src=\"build/img/compass.svg\">",
     title: 'My coordinates'
   }, navControl, map);
   map.controls[google.maps.ControlPosition.RIGHT_CENTER].push(navControl);
