@@ -399,7 +399,7 @@ function initMap() {
       }
     }
   });
-  var html = "<img src=\"src/img/location.svg\">\n              <p>Lviv, Ukraine</p>";
+  var html = "<img src=\"build/img/location.svg\">\n              <p>Lviv, Ukraine</p>";
   var overlay;
   MyOverlay.prototype = new google.maps.OverlayView();
   var bounds = new google.maps.LatLngBounds(new google.maps.LatLng(coords));
