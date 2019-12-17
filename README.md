@@ -1,4 +1,4 @@
-Yuriy Hrub "фронтенд без опыта"
+Да прибудет с тобой Frontend
 -----------------------------
 Web development using HTML / CSS, JavaScript and other technologies
 
