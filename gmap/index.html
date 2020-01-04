@@ -13,16 +13,6 @@
   <link rel="stylesheet" href="build/libs/normalize.min.css">
   <!-- <link rel="stylesheet" href="build/css/style.css"> -->
   <link rel="stylesheet" href="build/css/style.min.css">
-
-   <script>
-    let http = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyB86wuTDCPFfzEtDlGf_8VZxZxSeojv_4w&callback=initMap&language=en';
-    let script = document.createElement('script');
-    script.setAttribute('src', http);
-    script.async = true;
-    script.defer = true;
-    console.log(script);
-    document.body.appendChild(script)
-  </script>
 </head>
 <body>
   <div class="map-wrap">
@@ -43,6 +33,15 @@
     </div>
   </div>
 </div>
+   <script>
+    let http = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyB86wuTDCPFfzEtDlGf_8VZxZxSeojv_4w&callback=initMap&language=en';
+    let script = document.createElement('script');
+    script.setAttribute('src', http);
+    script.async = true;
+    script.defer = true;
+    console.log(script);
+    document.body.appendChild(script)
+  </script>
   <!--   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB86wuTDCPFfzEtDlGf_8VZxZxSeojv_4w&callback=initMap&language=en" async defer></script> -->
   <script src="build/js/action.min.js"></script>
 </body>
