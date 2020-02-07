@@ -12,7 +12,7 @@ window.addEventListener('load', function() {
     
     if(event.target.classList.contains('btn')) {
       let windowWidth  = document.documentElement.clientWidth,
-      sidebar          = event.target.closest('.sidebar');
+          sidebar      = event.target.closest('.sidebar');
 
       if(windowWidth - sidebarWidth < blockWidth) {
 
@@ -30,7 +30,6 @@ window.addEventListener('load', function() {
       else if(centralBlock.offsetWidth + sidebarWidth === windowWidth) {
         wrapper.style.width = centralBlock.offsetWidth - sidebarWidth + 'px'
       }
-      console.log(centralBlock.offsetWidth)
 
       sidebar.classList.toggle('hidden');
     }
