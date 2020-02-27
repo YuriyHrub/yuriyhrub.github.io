@@ -8,7 +8,7 @@ window.addEventListener('load', function() {
       rightBtn     = document.querySelector('.right-btn');
 
   document.querySelectorAll('.sidebar').forEach(sidebar => sidebar.style.width = `${sidebarWidth}px`);
-  // 
+  // set padding
   wrapper.style.paddingLeft = leftBtn.offsetWidth + 'px';
   wrapper.style.paddingRight = rightBtn.offsetWidth + 'px';
 
