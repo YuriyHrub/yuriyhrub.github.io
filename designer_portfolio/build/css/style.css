@@ -1060,7 +1060,7 @@ ul {
   }
   .info-btn::before {
     right: 18%;
-    top: 35%;
+    top: 30%;
     width: 1.4em;
     height: 1.2em;
     background-image: url('../img/arrow_bg.png');
