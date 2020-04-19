@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge"> <!-- special for IE -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Site Description............."> <!-- maxLength = 150 -->
+  <title>Юрист-сервис / O нас</title> <!-- maxLength = 65 -->
+  
+  <link rel="stylesheet" href="build/css/style.min.css">
+  <link rel="stylesheet" href="build/libs/normalize.min.css">
+
+  <script>
+    document.documentElement.setAttribute('data-useragent', navigator.userAgent);
+  </script>
+  <script>
+    function initMap() {
+  
+  var coords = {lat: 55.754222, lng: 37.621194};//Тут менять координаты для маркера на карте
+  var markerIcon = 'build/img/location.svg';//Путь прописывать от index.html
+  //Конструктор Map
+  let map = new google.maps.Map(document.getElementById('map'),
+  {
+    center: coords,
+    zoom: 15,
+    disableDefaultUI: true,
+  });
+
+  let marker = new google.maps.Marker({
+    icon: markerIcon,
+    position: coords,
+    title: 'HEllo',
+    map: map
+  });
+
+  let html = '<div class="pin"></div><div class="pin-effect"></div>';
+  let overlay;
+
+  MyOverlay.prototype = new google.maps.OverlayView();
+  let bounds = new google.maps.LatLngBounds(new google.maps.LatLng(coords));
+
+  overlay = new MyOverlay(map, coords, html, bounds);
+  
+  function MyOverlay(map, coordinates, html, bounds) {
+    this.map_         = map;
+    this.html_        = html;
+    this.coordinates_ = coordinates;
+    this.bounds_      = bounds;
+    this.div_ = null;
+
+    this.setMap(map);
+  }
+
+  
+  MyOverlay.prototype.onAdd = function() {
+    let div = document.createElement('div');
+    div.classList.add('marker');
+    div.innerHTML = html;
+
+    this.div_ = div;
+    
+    let panes = this.getPanes();
+    panes.overlayMouseTarget.appendChild(this.div_)
+    
+    let mapOverlay = document.createElement('div');
+    mapOverlay.classList.add('map-overlay');
+
+    panes.overlayShadow.appendChild(mapOverlay)
+
+  }
+  MyOverlay.prototype.draw = function() {
+    let projection = this.getProjection();
+    let sw = projection.fromLatLngToDivPixel(this.bounds_.getSouthWest());
+    let ne = projection.fromLatLngToDivPixel(this.bounds_.getNorthEast());
+ 
+    let div = this.div_;
+    div.style.left = sw.x + 'px';
+    div.style.top = ne.y + 'px';
+
+  }
+
+  map.addListener('zoom_changed', function() {
+    let zoom = this.getZoom();
+
+    if(zoom <= 16 && this.getMapTypeId() === 'hybrid') {
+      this.setMapTypeId('roadmap');
+    }
+    if(zoom >= 16) {
+      this.setMapTypeId('hybrid');
+    }
+
+  });
+
+}
+  </script>
+</head>
+<body>
+  <!-- svg icons -->
+  <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+      <symbol id="icon-youtube" viewBox="0 0 28 32">
+        <path d="M0 23.264q0-1.728 0.192-5.184 0.128-1.696 1.216-2.784t2.784-1.152q3.2-0.16 9.632-0.16t9.632 0.16q1.696 0.096 2.784 1.152t1.216 2.784q0.16 2.88 0.16 5.184t-0.16 5.184q-0.128 1.696-1.216 2.784t-2.784 1.152q-3.2 0.16-9.632 0.16t-9.632-0.16q-1.696-0.096-2.784-1.152t-1.216-2.784q-0.192-3.456-0.192-5.184zM2.144 18.752h1.952v10.432h1.888v-10.432h1.952v-1.76h-5.792v1.76zM4.224-0.544h1.92l1.216 4.864h0.128l1.152-4.864h1.92l-1.472 4.736q-0.736 2.336-0.736 2.4v5.056h-1.888v-4.832q-0.064-0.448-0.16-0.832t-0.288-0.832-0.288-0.8zM7.936 27.776q0 1.536 1.152 1.536 1.024 0 1.952-1.12v0.992h1.664v-8.992h-1.664v6.848q-0.672 0.672-0.992 0.672-0.448 0-0.448-0.608v-6.912h-1.664v7.584zM10.464 9.376v-4.672q0-1.088 0.704-1.696t1.792-0.576q1.056 0 1.728 0.64t0.64 1.696v4.64q0 1.152-0.64 1.792t-1.792 0.672q-1.12 0-1.76-0.704t-0.672-1.792zM12.192 9.6q0 0.736 0.704 0.736 0.736 0 0.736-0.8v-4.896q0-0.288-0.224-0.48t-0.512-0.192-0.48 0.16-0.224 0.48v4.992zM14.336 29.184h1.696v-0.672q0.64 0.8 1.6 0.8 1.504 0 1.504-1.984v-4.992q0-2.272-1.632-2.272-0.8 0-1.472 0.864v-3.936h-1.696v12.192zM16.032 27.488v-5.632q0.352-0.352 0.704-0.352 0.704 0 0.704 0.896v4.736q0 0.768-0.608 0.768-0.448 0-0.8-0.416zM16.768 10.24v-7.584h1.664v6.88q0 0.608 0.448 0.608 0.416 0 0.992-0.672v-6.816h1.664v8.992h-1.664v-0.992q-0.928 1.12-1.952 1.12-1.152 0-1.152-1.536zM20.416 26.656q0 1.216 0.608 2.016t1.824 0.768q2.496 0 2.496-2.784v-0.672h-1.728q0 0.064 0.032 0.416t-0.032 0.544-0.064 0.448-0.224 0.384-0.448 0.096q-0.736 0-0.736-1.28v-1.696h3.2v-2.304q0-1.216-0.576-1.92t-1.824-0.704q-1.152 0-1.824 0.736t-0.704 1.888v4.064zM22.144 23.488v-0.96q0-0.992 0.736-0.992t0.736 0.992v0.96h-1.472z"></path>
+      </symbol>
+      <symbol id="icon-insta" viewBox="0 0 27 32">
+        <path d="M18.272 16q0-1.888-1.312-3.232t-3.232-1.344-3.232 1.344-1.344 3.232 1.344 3.232 3.232 1.344 3.232-1.344 1.312-3.232zM20.736 16q0 2.912-2.048 4.992t-4.96 2.048-4.992-2.048-2.048-4.992 2.048-4.992 4.992-2.048 4.96 2.048 2.048 4.992zM22.688 8.672q0 0.672-0.48 1.152t-1.184 0.48-1.152-0.48-0.48-1.152 0.48-1.152 1.152-0.48 1.184 0.48 0.48 1.152zM13.728 4.736q-0.128 0-1.376 0t-1.888 0-1.728 0.064-1.824 0.16-1.28 0.352q-0.896 0.352-1.568 1.024t-1.056 1.568q-0.192 0.512-0.32 1.28t-0.192 1.856-0.032 1.696 0 1.888 0 1.376 0 1.376 0 1.888 0.032 1.696 0.192 1.856 0.32 1.28q0.384 0.896 1.056 1.568t1.568 1.024q0.512 0.192 1.28 0.352t1.824 0.16 1.728 0.064 1.888 0 1.376 0 1.344 0 1.888 0 1.728-0.064 1.856-0.16 1.248-0.352q0.896-0.352 1.6-1.024t1.024-1.568q0.192-0.512 0.32-1.28t0.192-1.856 0.032-1.696 0-1.888 0-1.376 0-1.376 0-1.888-0.032-1.696-0.192-1.856-0.32-1.28q-0.352-0.896-1.024-1.568t-1.6-1.024q-0.512-0.192-1.248-0.352t-1.856-0.16-1.728-0.064-1.888 0-1.344 0zM27.424 16q0 4.096-0.096 5.664-0.16 3.712-2.208 5.76t-5.728 2.208q-1.6 0.096-5.664 0.096t-5.664-0.096q-3.712-0.192-5.76-2.208t-2.208-5.76q-0.096-1.568-0.096-5.664t0.096-5.664q0.16-3.712 2.208-5.76t5.76-2.208q1.568-0.096 5.664-0.096t5.664 0.096q3.712 0.192 5.728 2.208t2.208 5.76q0.096 1.568 0.096 5.664z"></path>
+      </symbol>
+      <symbol id="icon-vk" viewBox="0 0 34 32">
+        <path d="M34.24 9.28q0.416 1.152-2.688 5.248-0.416 0.576-1.152 1.536-0.704 0.896-0.992 1.28t-0.544 0.864-0.224 0.768 0.256 0.608 0.576 0.768 1.024 0.96q0.064 0.032 0.064 0.064 2.528 2.336 3.424 3.936 0.064 0.096 0.128 0.224t0.128 0.48-0.032 0.608-0.448 0.48-1.056 0.224l-4.544 0.096q-0.448 0.064-1.024-0.096t-0.928-0.416l-0.352-0.192q-0.544-0.384-1.248-1.152t-1.216-1.376-1.088-1.056-1.024-0.256q-0.032 0-0.128 0.064t-0.32 0.256-0.384 0.512-0.288 0.928-0.128 1.408q0 0.256-0.064 0.48t-0.128 0.32l-0.064 0.096q-0.32 0.352-0.96 0.384h-2.048q-1.28 0.096-2.592-0.288t-2.368-0.928-1.824-1.184-1.28-1.024l-0.448-0.448q-0.16-0.16-0.48-0.544t-1.28-1.6-1.888-2.72-2.176-3.744-2.336-4.864q-0.128-0.288-0.128-0.48t0.064-0.288l0.064-0.096q0.288-0.352 1.024-0.352l4.896-0.032q0.224 0.032 0.416 0.096t0.288 0.16l0.096 0.064q0.288 0.192 0.416 0.576 0.352 0.896 0.832 1.824t0.736 1.472l0.288 0.512q0.512 1.088 0.992 1.856t0.864 1.216 0.736 0.704 0.608 0.256 0.48-0.096q0.032-0.032 0.096-0.096t0.224-0.384 0.224-0.832 0.16-1.472 0-2.208q-0.032-0.736-0.16-1.312t-0.224-0.832l-0.128-0.192q-0.448-0.608-1.504-0.768-0.256-0.064 0.096-0.448 0.256-0.32 0.672-0.544 0.928-0.448 4.256-0.416 1.472 0.032 2.4 0.224 0.384 0.096 0.608 0.256t0.384 0.416 0.16 0.576 0.064 0.8 0 0.992-0.064 1.28 0 1.472q0 0.192-0.032 0.736t0 0.864 0.064 0.704 0.192 0.704 0.416 0.448q0.128 0.032 0.288 0.064t0.48-0.192 0.672-0.608 0.928-1.216 1.216-1.92q1.056-1.856 1.92-4 0.064-0.192 0.16-0.32t0.192-0.192l0.096-0.064 0.064-0.032t0.256-0.064 0.352 0l5.12-0.032q0.704-0.096 1.152 0.032t0.544 0.32z"></path>
+      </symbol>
+      <symbol id="icon-odnoklassniki" viewBox="0 0 19 32">
+        <path d="M9.28 0c-4.576 0-8.256 3.712-8.256 8.256s3.68 8.256 8.256 8.256c4.544 0 8.256-3.712 8.256-8.256s-3.712-8.256-8.256-8.256zM9.28 4.832c1.888 0 3.424 1.536 3.424 3.424s-1.536 3.424-3.424 3.424c-1.888 0-3.424-1.536-3.424-3.424s1.536-3.424 3.424-3.424zM2.464 16.8c-0.832-0.032-1.632 0.384-2.080 1.12-0.736 1.152-0.384 2.624 0.736 3.36 1.504 0.928 3.136 1.6 4.8 1.984l-4.608 4.608c-0.96 0.96-0.96 2.464 0 3.424 0.48 0.48 1.088 0.704 1.696 0.704 0.64 0 1.248-0.224 1.728-0.704l4.544-4.544 4.512 4.544c0.96 0.928 2.496 0.928 3.424 0 0.96-0.96 0.96-2.496 0-3.424l-4.608-4.608c1.696-0.384 3.296-1.056 4.8-1.984 1.12-0.736 1.472-2.208 0.768-3.36-0.736-1.12-2.208-1.472-3.36-0.736-3.36 2.112-7.712 2.112-11.104 0-0.384-0.256-0.832-0.384-1.248-0.384z"></path>
+      </symbol>
+      <symbol id="icon-search" viewBox="0 0 16 16">
+        <path d="M15.56 15.56c-0.587 0.587-1.538 0.587-2.125 0l-2.652-2.652c-1.090 0.699-2.379 1.116-3.771 1.116-3.872 0-7.012-3.139-7.012-7.012s3.14-7.012 7.012-7.012c3.873 0 7.012 3.139 7.012 7.012 0 1.391-0.417 2.68-1.116 3.771l2.652 2.652c0.587 0.587 0.587 1.538 0 2.125zM7.012 2.003c-2.766 0-5.009 2.242-5.009 5.009s2.243 5.009 5.009 5.009c2.766 0 5.009-2.242 5.009-5.009s-2.242-5.009-5.009-5.009z"></path>
+      </symbol>
+    </defs>
+  </svg>
+
+
+  <div class="page" id="about-page">
+
+    <!-- Header -->
+    
+    <header class="site__header">
+      <div class="header__inner container">
+        
+        <div class="site__logo">
+          <p class="logo-title"><a href="index.html" class="logo__link">Юрист-сервис</a></p>
+          <p class="logo-desc">опыт | знания | подход | успехи</p>
+        </div>
+        
+        <div class="burger-menu"><span></span></div>
+        <div class="header__menu primary-font">
+          
+          <ul class="menu__list header__menu-hidden">
+            <li class="menu__item">
+              <a href="index.html" class="menu__link">Главная</a>
+            </li>
+            <li class="menu__item">
+              <a href="" class="menu__link">Услуги</a>
+            </li>
+            <li class="menu__item">
+              <a href="" class="menu__link menu__link-active">О нас</a>
+            </li>
+            <li class="menu__item">
+              <a href="thanks.html" class="menu__link">Дела</a>
+            </li>
+            <li class="menu__item">
+              <a href="" class="menu__link">Запись</a>
+            </li>
+            <li class="menu__item">
+              <a href="" class="menu__link">Контакты</a>
+            </li>
+          </ul>
+        </div>
+        
+        <div class="feedback__block primary-font">
+          <a href="tel:+7(495)647-16-48" class="tel">+7(495)647-16-48</a>
+          <div class="social__list">
+            <a href="сылка на однокласники" class="social__item"><svg class="icon"><use xlink:href="#icon-odnoklassniki"/></svg></a>
+            <a href="сылка на вк" class="social__item"><svg class="icon"><use xlink:href="#icon-vk"/></svg></a>
+            <a href="сылка на ютуб" class="social__item"><svg class="icon"><use xlink:href="#icon-youtube"/></svg></a>
+            <a href="сылка на инста" class="social__item"><svg class="icon"><use xlink:href="#icon-insta"/></svg></a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Site body -->
+    <div class="site__body site__body-about">
+      <div class="container body__inner body__inner-about">
+
+        <!-- Site menu -->
+        <nav class="site__menu site__menu-about primary-font">
+          <ul class="menu__list">
+            <li class="menu__item"><a href="index.html" class="menu__link">Главная</a></li>
+            <li class="menu__item"><a href="about_us.html" class="menu__link menu__link-active">О нас</a></li>
+            <li class="menu__item"><a href="thanks.html" class="menu__link">Отзывы</a></li>
+            <li class="menu__item"><a href="faq.html" class="menu__link">Частые вопросы</a></li>
+            <li class="menu__item"><a href="legal.html" class="menu__link">Юр. лицам</a></li>
+          </ul>
+        </nav>
+
+        <!-- legal content -->
+        <main class="about__content">
+          <div class="feedback__btn-wrap">
+           <span class="feedback__btn primary-font">Задать вопрос</span>
+        </div>
+        <h1 class="about__title page__title primary-font">О нас</h1>
+          <div class="about__info primary-font">
+            <h3 class="info__title">Юрист-сервис - это:</h3>
+            <div class="info__txt">
+              <p>Надежный партнер для юридической и физической безопасности Вашего малого и среднего бизнеса в Украине, что подтверждается доверием постоянных клиентов. Мы предлагаем Вам широкий спектр услуг, необходимый для ведения и защиты бизнеса.</p>
+              <p>Наша цель — достижение положительного результата для клиента путем оказания квалифицированной юридической помощи. Поэтому юридическая компания Partner’s постоянно развивается, что подтверждается повышением уровня квалификации юристов и внедрением методов интерактивного общения с юристами и прочее.</p>
+              <p>В настоящее время деятельность компании Partner’s охватывает следующие услуги:</p>
+              <ul class="info__list">
+                <li>услуги адвокатов;</li>
+                <li>юридические услуги;</li>
+                <li>охранные услуги;</li>
+                <li>услуги нотариусов;</li>
+                <li>услуги аудиторов;</li>
+                <li>услуги арбитражных управляющих;</li>
+                <li>услуги биржи;</li>
+                <li>транспортно-экспедиторские услуги;</li>
+                <li>услуги оценщиков и экспертов.</li>
+              </ul>
+            </div>
+          </div>
+        <div class="feedback__btn-wrap">
+           <span class="feedback__btn primary-font">Задать вопрос</span>
+        </div>
+        </main>
+
+      </div>
+    </div>
+    
+    <!-- Google Map -->
+    <div id="map"></div>
+
+
+    <!-- Footer -->
+
+    <footer class="site__footer">
+      <div class="container footer__inner">
+        <div class="site__logo">
+          <p class="logo-title"><a href="index.html" class="logo__link">Юрист-сервис</a></p>
+          <p class="logo-desc">опыт | знания | подход | успехи</p>
+        </div>
+        <div class="feedback__block primary-font">
+          <p class="feedback__info">Сбор и обработка ваших данных осуществляется в соотвествии с фз рф &#8470; 152 от 08.05.2006</p>
+          <a href="tel:+7(495)647-16-48" class="tel">+7(495)647-16-48</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Popups -->
+  <div class="overlay" hidden>
+    
+    <div class="main__popup popup primary-font">
+      <span class="close__btn"></span>
+      <h3 class="popup__title popup__title-main">Задайте юристу вопрос:</h3>
+      <form name="feedback" class="feedback__form">
+        <input type="text" name="User-name" placeholder="Имя">
+        <input type="text" name="Phone/email" placeholder="Телефон или e-mail">
+        <textarea>Опишите (в свободной форме)</textarea>
+        <button class="feedback__btn-popup popup__btn" type="submit">Продолжить</button>
+      </form>
+    </div>
+
+    <div class="confirm__popup popup primary-font" hidden>
+      <span class="close__btn"></span>
+      <div class="confirm__inner">
+        <h3 class="popup__title popup__title-confirm">Угостить юриста чашкой кофе</h3>
+        <div class="confirm__buttons">
+          <div class="cancel__wrap">
+            <button type="button" class="popup__btn confirm__btn confirm__btn-cancel">Жмусь</button>
+          </div>
+          <div class="success__wrap">
+            <button type="button" class="popup__btn confirm__btn confirm__btn-success">Угостить</button>
+            <div class="success__tooltip"><p>Анонимная, быстрая консультация за 30 миннут</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="popup success__popup primary-font" hidden>
+      <span class="close__btn"></span>
+      <h3 class="popup__title">Спасибо, сообщение отправлено!</h3>
+      <button class="success__btn popup__btn">Хорошо</button>
+    </div>
+  </div>
+
+  <!-- If need change language, change here  &language=en -->
+  <script>
+   let str = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyB86wuTDCPFfzEtDlGf_8VZxZxSeojv_4w&callback=initMap&language=ru';
+   let script = document.createElement('script');
+   script.setAttribute('src', str);
+   script.async = true;
+   script.defer = true;
+   console.log(script);
+   document.body.appendChild(script)
+ </script>
+  <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDNxV4pL-yWHTSCzyYe21XMzebMNMTcN54&callback=initMap&language=ru" async defer></script> -->
+  <script src="src/js/action.min.js"></script>
+</body>
+</html>

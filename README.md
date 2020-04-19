@@ -3,6 +3,7 @@
 Web development using HTML / CSS, JavaScript and other technologies
 
 <ul>
+  <li><a href="https://yuriyhrub.github.io/yurist_service/index.html">Верстка для "Юрист-Сервис"</a></li>
   <li><a href="https://yuriyhrub.github.io/traveling_sidebars/index.html">Traveling sidebars(template)</a></li>
   <li><a href="https://yuriyhrub.github.io/gmap/index.html">Custom google map</a></li>
   <li><a href="https://yuriyhrub.github.io/designer_portfolio/index.html">Portfolio of some designer</a></li> 
