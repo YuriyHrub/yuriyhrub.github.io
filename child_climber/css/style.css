@@ -2839,6 +2839,10 @@ h3 {
   margin-bottom: 30px;
 }
 
+.reviews__title-wrap {
+  width: 75%;
+}
+
 .reviews-swiper-container {
   margin-bottom: 70px;
   min-height: 480px;
@@ -3614,6 +3618,8 @@ html[data-useragent~="Trident/7.0;"] .slider-thumbs__btn--prev {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;

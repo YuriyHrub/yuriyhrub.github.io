@@ -5933,27 +5933,25 @@ var burgerToggle = document.querySelector('.burger__toggle'),
     mobBar = document.querySelector('.page-header__mob-group'),
     scrollWidth = window.innerWidth - document.documentElement.clientWidth,
     closeBtn = document.querySelector('.page-header__close-btn');
-window.addEventListener('resize', function () {
-  return scrollWidth = window.innerWidth - document.documentElement.clientWidth;
-});
 
-var addScroll = function addScroll() {
+function addScroll() {
   document.body.classList.remove('scroll-off');
   document.body.style.paddingRight = '';
   fixedElements.forEach(function (elem) {
     elem.style.paddingRight = '';
   });
-};
+}
 
-var stopedScroll = function stopedScroll() {
+function stopedScroll() {
   document.body.classList.add('scroll-off');
   document.body.style.paddingRight = "".concat(scrollWidth, "px");
   fixedElements.forEach(function (elem) {
     elem.style.paddingRight = "".concat(scrollWidth, "px");
   });
-};
+}
 
 burger.addEventListener('click', function (e) {
+  scrollWidth = window.innerWidth - document.documentElement.clientWidth;
   header.classList.toggle('is-visible');
   stopedScroll();
 });
