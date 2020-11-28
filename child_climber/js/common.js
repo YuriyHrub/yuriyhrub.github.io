@@ -5931,7 +5931,7 @@ var burgerToggle = document.querySelector('.burger__toggle'),
     burger = document.querySelector('.burger'),
     header = document.querySelector('.page-header'),
     mobBar = document.querySelector('.page-header__mob-group'),
-    scrollWidth = screen.width - document.documentElement.clientWidth,
+    scrollWidth = window.innerWidth - document.documentElement.clientWidth,
     closeBtn = document.querySelector('.page-header__close-btn');
 
 var addScroll = function addScroll() {
