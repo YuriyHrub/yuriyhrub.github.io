@@ -5604,8 +5604,8 @@ img {
 .blog__title {
   margin-bottom: 15px;
   padding-bottom: 15px;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.8))), url("../../img/design/blog_title_bg.jpg") no-repeat 50% 50%/cover;
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../../img/design/blog_title_bg.jpg") no-repeat 50% 50%/cover;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.8))), url("../img/design/blog_title_bg.jpg") no-repeat 50% 50%/cover;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("../img/design/blog_title_bg.jpg") no-repeat 50% 50%/cover;
   color: #fff;
 }
 
@@ -6427,6 +6427,9 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
 }
 
 .faq__content, .about__content, .contacts__content {

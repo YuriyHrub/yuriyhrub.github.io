@@ -1108,7 +1108,7 @@ to{-webkit-transform:scale(2);transform:scale(2);opacity:0}
 .equipment__item-img img{-o-object-fit:cover;object-fit:cover}
 .equipment__item-title{margin-bottom:.5em}
 .equipment__item-txt{font-family:Montserrat,"Times New Roman",serif}
-.blog__title{margin-bottom:15px;padding-bottom:15px;background:-webkit-gradient(linear,left top,right top,from(rgba(0,0,0,.8)),to(rgba(0,0,0,.8))),url(../../img/design/blog_title_bg.jpg) 50% 50%/cover no-repeat;background:linear-gradient(to right,rgba(0,0,0,.8),rgba(0,0,0,.8)),url(../../img/design/blog_title_bg.jpg) 50% 50%/cover no-repeat;color:#fff}
+.blog__title{margin-bottom:15px;padding-bottom:15px;background:-webkit-gradient(linear,left top,right top,from(rgba(0,0,0,.8)),to(rgba(0,0,0,.8))),url(../img/design/blog_title_bg.jpg) 50% 50%/cover no-repeat;background:linear-gradient(to right,rgba(0,0,0,.8),rgba(0,0,0,.8)),url(../img/design/blog_title_bg.jpg) 50% 50%/cover no-repeat;color:#fff}
 .blog__content{border-top:1px solid rgba(0,0,0,.2);overflow:hidden}
 .blog__content-inner{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap}
 .blog__article,.blog__preview{width:100%}
@@ -1287,7 +1287,7 @@ to{-webkit-transform:scale(2);transform:scale(2);opacity:0}
 .work-projects__preview-desc{margin-bottom:26px}
 }
 .about-page__title,.contacts-page__title,.faq-page__title{margin-bottom:.27em}
-.about,.contacts,.faq{margin-left:-15px;margin-right:-15px;display:-webkit-box;display:-ms-flexbox;display:flex}
+.about,.contacts,.faq{margin-left:-15px;margin-right:-15px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:start;-ms-flex-align:start;align-items:flex-start}
 .about__content,.contacts__content,.faq__content{padding-left:15px;padding-right:15px;-webkit-box-flex:0;-ms-flex:0 1 100%;flex:0 1 100%;max-width:100%}
 @media screen and (min-width:900px){
 .about__content,.contacts__content,.faq__content{padding-left:15px;padding-right:15px;-webkit-box-flex:0;-ms-flex:0 1 75%;flex:0 1 75%;max-width:75%}
