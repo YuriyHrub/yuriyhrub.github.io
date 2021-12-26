@@ -3,6 +3,7 @@
 Web development using HTML / CSS, JavaScript and other technologies
 
 <ul>
+  <li><a href="https://yuriyhrub.github.io/edem/index.html">Верстка сайта компании которая занимается дизайном и ремонтами домов, квартир и комерческих зданий.</a></li>
   <li><a href="https://yuriyhrub.github.io/child_climber/index.html">Верстка интернет магазина "Child Climber"</a></li>
   <li><a href="https://yuriyhrub.github.io/gmap/index.html">Custom google map</a></li>
   <li><a href="https://yuriyhrub.github.io/designer_portfolio/index.html">Portfolio of some designer</a></li> 

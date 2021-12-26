@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge"> <!-- special for IE -->
+  <meta name="format-detection" content="telephone=no"> <!-- for Safari -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Строительная компания ЭДЕМ была открыта в 2009 году. С первого дня работы нашим приоритетом стало выполнение качественного ремонта"> <!-- maxLength = 150 -->
+  <title>EDEM. О компании</title> <!-- maxLength = 65 -->
+
+  <!-- Chrome, Firefox OS and Opera -->
+  <meta name="theme-color" content="#00ADB5">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="stylesheet" href="css/libs/swiper.min.css">
+  <link rel="stylesheet" href="css/libs/normalize.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+  
+</head>
+<body class="page about-page">
+    <header class="header">
+      <div class="header__top-row">
+  
+        <div class="container">
+          <div class="header__inner">
+  
+            <nav class="menu header-menu" data-jump data-jump-to=".drop-content__inner.js-jump 1 1100">
+              <ul class="menu__list header-menu__list">
+                <li class="menu__item header-menu__item">
+                  <a href="blog.html" class="menu__link header-menu__link">Блог</a>
+                </li>
+                <li class="menu__item header-menu__item">
+                  <a href="technology.html" class="menu__link header-menu__link">Технологии</a>
+                </li>
+                <li class="menu__item header-menu__item">
+                  <a href="faq.html" class="menu__link header-menu__link">Частые вопросы</a>
+                </li>
+                <li class="menu__item header-menu__item">
+                  <a class="menu__link header-menu__link header-menu__link--active">О компании</a>
+                </li>
+                <li class="menu__item header-menu__item">
+                  <a href="contacts.html" class="menu__link header-menu__link">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+  
+            <div class="header__work-time">Пн – Пт / с 9:00 до 18:00</div>
+  
+          </div>
+        </div>
+      </div>
+      <!-- end .header__top-row -->
+  
+      <div class="container">
+        <div class="header__inner header__bottom-row js-jump">
+  
+          <div class="header__logo-wrap">
+            <a href="/" class="logo">
+              <img class="logo__img header__logo-img" src="img/content/logo.svg" alt="Логотип компании ЕДЕМ">
+              <div class="logo__txt">
+                <p>Ремонт и отделка квартир, коттеджей, офисов в Москве и Московской области</p>
+              </div>
+            </a>
+          </div>
+  
+        <button class="burger" title="Кнопка открытия и закрытия навигации" aria-label="Кнопка открытия и закрытия меню       ">
+          <span class="burger__toggle"></span>
+        </button>
+        <div class="header__main-menu-wrap drop-content">
+          <div class="drop-content__inner js-jump">
+  
+            <nav class="header__main-menu main-menu">
+              <ul class="main-menu__list">
+                <li class="main-menu__item">
+                  <ul class="main-menu__inner-list">
+                    <li class="main-menu__inner-item">
+                      <a href="services.html" class="main-menu__link main-menu__inner-link">Услуги</a>
+                    </li>
+                    <li class="main-menu__inner-item">
+                      <a href="projects.html" class="main-menu__link main-menu__inner-link">Проекты</a>
+                    </li>
+                    <li class="main-menu__inner-item">
+                      <a href="" class="main-menu__link main-menu__inner-link">Акции</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="main-menu__item main-menu__work">
+                  <a href="work-projects.html" class="main-menu__link main-menu__work-link">Проекты в работе <sup>06</sup></a>
+                </li>
+                <li class="main-menu__item main-menu__repair-calc">
+                  <a href="" class="main-menu__link">Калькулятор ремонта</a>
+                </li>
+                <li class="main-menu__item">
+                  <div class="main-menu__tel">
+                    <a href="tel:+74951157103" class="main-menu__tel-link" data-jump data-jump-to=".header__bottom-row.js-jump 1 1100" aria-label="Вы можете связаться с нами по нажатию на кнопку">
+                      <span class="main-menu__tel-num">+7 495 115 71 03</span>
+                    </a>
+                    <a class="main-menu__btn btn" id="modal-open" data-jump data-jump-to=".drop-content__inner.js-jump 2 1100">
+                      Заказать звонок
+                    </a>
+                  </div>
+                </li>
+              </ul>
+            </nav>
+            <div class="contacts-block">
+              <ul class="contacts-block__tel-list">
+                <li class="contacts-block__tel-item">
+                  <a href="tel:+74951157103" class="contacts-block__tel-link tel-link">+7 (495) 115 71 03</a>
+                </li>
+                <li class="contacts-block__tel-item">
+                  <a href="tel:+79251337770" class="contacts-block__tel-link tel-link">+7 (925) 133 77 70</a>
+                </li>
+              </ul>
+            
+              <address class="contacts-block__address">
+                <a href="mailto:info@edem-sk.pro" class="contacts-block__address-link">info@edem-sk.pro</a>
+                <p class="contacts-block__address-txt">
+                  119331, Москва,<br>
+                  пр. Вернадского  21к3, офис 603
+                </p>
+              </address>
+            
+              <ul class="contacts-block__social-list">
+                
+                <li class="contacts-block__social-item">
+                  <a href="" class="contacts-block__social-link" aria-label="Переход на страницу телеграма  ">
+                    <svg class="icon icon-social">
+                      <use xlink:href="img/design/symbol_sprite.svg#_insta"/>
+                    </svg>
+                  </a>
+                </li>
+                <li class="contacts-block__social-item">
+                  <a href="" class="contacts-block__social-link" aria-label="Переход на страницу телеграма  ">
+                    <svg class="icon icon-social icon-telegram">
+                      <use xlink:href="img/design/symbol_sprite.svg#_telegram"/>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+  </header>
+  <div class="breadcrumbs">
+    <div class="container">
+      <ul class="breadcrumbs__list">
+        <li class="breadcrumbs__item"><a href="/" class="breadcrumbs__link">
+          Эдем
+        </a></li>
+        <li class="breadcrumbs__item"><span class="breadcrumbs__item-separator">/</span><a class="breadcrumbs__link">О компании</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="container">
+    <h1 class="page__title about-page__title">О компании</h1>
+
+    <div class="about js-container">
+      <main class="about__content js-content">
+        <div class="about__txt about__desc">
+          <p>Строительная компания ЭДЕМ была открыта в 2009 году. С первого дня работы нашим приоритетом стало выполнение качественного ремонта, который бы учитывал все задумки и желания заказчика.</p>
+          <p>Уже более 11 лет нам удается поддерживать репутацию надежной строительной компании, всегда идущей навстречу клиенту.</p>
+        </div>
+        
+        <div class="about__team">
+          <div class="about__team-managers">
+            <div class="manager about__manager">
+              <div class="manager__pic"><img src="img/content/avatar1.jpg" alt="Марина Афанасьева. Руководитель проектов"></div>
+              <p class="manager__name">Марина Афанасьева</p>
+              <p class="manager__prof">Руководитель проектов</p>
+              <a class="link manager__email" href="mailto:ds@edem-sk.pro">ds@edem-sk.pro</a>
+            </div>
+            <div class="manager about__manager">
+              <div class="manager__pic"><img src="img/content/avatar2.jpg" alt="Станислав Петренко. Менеджер"></div>
+              <p class="manager__name">Станислав Петренко</p>
+              <p class="manager__prof">Менеджер</p>
+              <a class="link manager__email" href="mailto:ds@edem-sk.pro">ds@edem-sk.pro</a>
+            </div>
+            <div class="manager about__manager">
+              <div class="manager__pic"><img src="img/content/avatar3.jpg" alt="Павел Христенко. Дизайнер"></div>
+              <p class="manager__name">Павел Христенко</p>
+              <p class="manager__prof">Дизайнер</p>
+              <a class="link manager__email" href="mailto:ds@edem-sk.pro">ds@edem-sk.pro</a>
+            </div>
+            <div class="manager about__manager">
+              <div class="manager__pic"><img src="img/content/avatar4.jpg" alt="Дмитрий Свиридов. Руководитель проектов"></div>
+              <p class="manager__name">Дмитрий Свиридов</p>
+              <p class="manager__prof">Руководитель проектов</p>
+              <a class="link manager__email" href="mailto:ds@edem-sk.pro">ds@edem-sk.pro</a>
+            </div>
+            <div class="manager about__manager">
+              <div class="manager__pic"><img src="img/content/avatar5.jpg" alt="Антон Севидов. Дизайнер"></div>
+              <p class="manager__name">Антон Севидов</p>
+              <p class="manager__prof">Дизайнер</p>
+              <a class="link manager__email" href="mailto:ds@edem-sk.pro">ds@edem-sk.pro</a>
+            </div>
+            <div class="manager about__manager">
+              <div class="manager__pic"><img src="img/content/avatar1.jpg" alt="Марина Афанасьева. Руководитель проектов"></div>
+              <p class="manager__name">Марина Афанасьева</p>
+              <p class="manager__prof">Руководитель проектов</p>
+              <a class="link manager__email" href="mailto:ds@edem-sk.pro">ds@edem-sk.pro</a>
+            </div>
+          </div>
+        
+          <button class="about__team-btn">Показать ещё 9 контактов</button>
+        </div>
+
+        <div class="about__work-time work-time">
+              
+           <h2 class="work-time__title">Приходите к нам в офис на консультацию. <br>Мы открыты с 10:00 до 19:00</h2>
+           <div class="slider work-time__slider">
+             <!-- Slider main container -->
+             <div class="swiper-container slider__container">
+               <!-- Additional required wrapper -->
+               <div class="swiper-wrapper slider__slides-wrapper">
+                 <!-- Slides -->
+                 <div class="swiper-slide slider__slide"><img src="img/content/work-time1_640.jpg" alt=""></div>
+                 <div class="swiper-slide slider__slide"><img src="img/content/work-time2_640.jpg" alt=""></div>
+                 <div class="swiper-slide slider__slide"><img src="img/content/work-time3_640.jpg" alt=""></div>
+               </div>
+             </div>
+             <!-- If we need navigation buttons -->
+             <button class="swiper-button-prev slider__btn slider__btn--prev" aria-label="Переключить на предидущий слайд">
+               <svg class="icon icon-arrow">
+                 <use xlink:href="img/design/symbol_sprite.svg#_arrow-left"/>
+               </svg>
+             </button>
+             <button class="swiper-button-next slider__btn slider__btn--next" aria-label="Переключить на следующий слайд">
+               <svg class="icon icon-arrow">
+                 <use xlink:href="img/design/symbol_sprite.svg#_arrow-right"/>
+               </svg>
+             </button>
+             <!-- If we need pagination -->
+             <div class="swiper-pagination slider__pagination"></div>
+           </div>
+        </div>
+        <div class="about__info">
+         <h2 class="about__info-title">Наша команда специалистов решит любые ваши задачи</h2>
+         <div class="about__info-img">
+          <img class="lazyload"
+          src="img/content/work-proces_640.jpg"
+          alt="Група сотрудников обсуждают проект"
+          data-srcset="img/content/work-proces_640.jpg 640w,
+          img/content/work-proces_920.jpg 920w,
+          img/content/work-proces_1220.jpg 1220w"
+          data-sizes="100vw, (min-width: 900px) 80vw">
+        </div>
+            
+          <div class="about__advantages">
+            <div class="our-advantage">
+              <h4 class="our-advantage__title">Гарантируем</h4>
+              <ul class="our-advantage__list">
+                <li class="our-advantage__item">Многоуровневый контроль качества</li>
+                <li class="our-advantage__item">Сроки и стоимость зафиксированы </li>
+                <li class="our-advantage__item">Оплата по факту выполнения этапа</li>
+                <li class="our-advantage__item">Персональный менеджер для вашего проекта</li>
+              </ul>
+            </div>
+            
+            <div class="our-advantage line">
+              <h4 class="our-advantage__title">Мы в цифрах</h4>
+              <ul class="our-advantage__list">
+                <li class="our-advantage__item"><span class="our-advantage__num">72</span>сотрудника в штате</li>
+                <li class="our-advantage__item"><span class="our-advantage__num">5</span>дизайнеров</li>
+                <li class="our-advantage__item"><span class="our-advantage__num our-advantage__num--blue">320</span>завершенных проектов</li>
+                <li class="our-advantage__item"><span class="our-advantage__num">47%</span>клиентов по рекомендации</li>
+              </ul>
+            </div>
+          </div>
+        
+          <div class="about__txt about__info-txt">
+            <p>В процессе работы мы используем современные безопасные материалы и новейшие технологии, за счет чего выполнять красивый и долговечный ремонт нам удается и в старых домах, и в новостройках.</p>
+            <p>Обращайтесь в компанию Эдем и убедитесь, что качественный ремонт по доступным ценам — это реальность!</p>
+          </div>
+        </div>
+        <div class="technology about__technology js-jump">
+          <header class="technology__header">
+            <h2 class="technology__title">Каменный век закончился не потому что закончились камни, а потому что появились современные технологии</h2>
+            <ul class="technology__tags-list">
+              <li class="technology__tags-item">Экономим время</li>
+              <li class="technology__tags-item">Экономим деньги</li>
+            </ul>
+            <a href="technology.html" class="link technology__link" data-jump data-jump-to=".about__technology.js-jump 2 600">Подробнее о технологиях</a>
+          </header>
+          
+          <div class="technology__machines machines">
+            <figure class="machines__img">
+              <img src="img/content/technology-pic1.jpg" alt="Механизированная штукатурная станция">
+              <figcaption class="machines__desc">PFT g4</figcaption>
+            </figure>
+        
+            <figure class="machines__img">
+              <img src="img/content/technology-pic2.jpg" alt="Механизированная штукатурная станция">
+              <figcaption class="machines__desc">Graco Mark X</figcaption>
+            </figure>
+            
+            <figure class="machines__img">
+              <img src="img/content/technology-pic4.jpg" alt="Механизированная штукатурная станция">
+              <figcaption class="machines__desc">Graco APX 6200</figcaption>
+            </figure>
+          </div>
+        
+        </div>
+        <div class="services about__services">
+          <div class="services__item">
+            <div class="services__item-inner services__design-inner">
+              <h3 class="services__title">Дизайн<br> интерьера</h3>
+              <div class="services__txt">
+                <ul>
+                  <li><a href="card-design.html">Дизайн-проект под ключ</a></li>
+                  <li><a href="card-design.html">Базовый дизайн-проект</a></li>
+                  <li><a href="card-design.html">3D визуализация</a></li>
+                  <li><a href="card-design.html">Авторский надзор</a></li>
+                  <li><a href="card-design.html">Комплектация объекта</a></li>
+                </ul>
+              </div>
+              <a href="services.html" class="btn btn--animated btn--transparent services__btn">Смотреть услуги</a>
+            </div>
+          </div>
+          <div class="services__item">
+            <div class="services__item-inner services__repairs-inner">
+              <h3 class="services__title">Ремонт<br> под ключ</h3>
+              <div class="services__txt">
+                <ul>
+                  <li><a href="card-repair.html">Ремонт под ключ</a></li>
+                  <li><a href="card-repair.html">Базовый ремонт</a></li>
+                  <li><a href="card-repair.html">3D визуализация</a></li>
+                  <li><a href="card-repair.html">Авторский надзор</a></li>
+                  <li><a href="card-repair.html">Комплектация объекта</a></li>
+                </ul>
+              </div>
+              <a href="services.html" class="btn btn--animated btn--transparent services__btn">Смотреть услуги</a>
+            </div>
+          </div>
+        </div>
+      </main>
+      <aside class="nav-sidebar about__sidebar js-sidebar">
+        <ul class="nav-sidebar__list">
+          <li class="nav-sidebar__item"><a href="faq.html" class="nav-sidebar__link">Частые вопросы</a></li>
+          <li class="nav-sidebar__item"><a class="nav-sidebar__link is-active">О компании</a></li>
+          <li class="nav-sidebar__item"><a href="contacts.html" class="nav-sidebar__link">Контакты</a></li>
+        </ul>
+      </aside>
+    </div>
+  </div>
+  <div class="about__company-life">
+    <div class="container">
+      <div class="company-life">
+      
+        <h2 class="company-life__title">Жизнь компании</h2>
+        
+        <div class="slider company-life__slider">
+          <!-- Slider main container -->
+          <div class="swiper-container slider__container">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper slider__slides-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide slider__slide">
+                <img src="img/content/company-life_640.jpg" alt="">
+              </div>
+              <div class="swiper-slide slider__slide">
+                <img src="img/content/com_640.jpg" alt="">
+              </div>
+              <div class="swiper-slide slider__slide">
+                <img src="img/content/company-life_640.jpg" alt="">
+              </div>
+              <div class="swiper-slide slider__slide">
+                <img src="img/content/com_640.jpg" alt="">
+              </div>
+              <div class="swiper-slide slider__slide">
+                <img src="img/content/company-life_640.jpg" alt="">
+              </div>
+              <div class="swiper-slide slider__slide">
+                <img src="img/content/com_640.jpg" alt="">
+              </div>
+              <div class="swiper-slide slider__slide">
+                <img src="img/content/company-life_640.jpg" alt="">
+              </div>
+              <div class="swiper-slide slider__slide">
+                <img src="img/content/com_640.jpg" alt="">
+              </div>
+              <div class="swiper-slide slider__slide">
+                <img src="img/content/company-life_640.jpg" alt="">
+              </div>
+              <div class="swiper-slide slider__slide">
+                <img src="img/content/com_640.jpg" alt="">
+              </div>
+              <div class="swiper-slide slider__slide">
+                <img src="img/content/company-life_640.jpg" alt="">
+              </div>
+              <div class="swiper-slide slider__slide">
+                <img src="img/content/com_640.jpg" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="page__footer footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__contacts">
+  
+          <a class="logo footer__logo">
+            <img class="logo__img" src="img/content/logo.svg" alt="Логотип компании ЕДЕМ">
+          </a>
+          <div class="contacts-block">
+            <ul class="contacts-block__tel-list">
+              <li class="contacts-block__tel-item">
+                <a href="tel:+74951157103" class="contacts-block__tel-link tel-link">+7 (495) 115 71 03</a>
+              </li>
+              <li class="contacts-block__tel-item">
+                <a href="tel:+79251337770" class="contacts-block__tel-link tel-link">+7 (925) 133 77 70</a>
+              </li>
+            </ul>
+          
+            <address class="contacts-block__address">
+              <a href="mailto:info@edem-sk.pro" class="contacts-block__address-link">info@edem-sk.pro</a>
+              <p class="contacts-block__address-txt">
+                119331, Москва,<br>
+                пр. Вернадского  21к3, офис 603
+              </p>
+            </address>
+          
+            <ul class="contacts-block__social-list">
+              
+              <li class="contacts-block__social-item">
+                <a href="" class="contacts-block__social-link" aria-label="Переход на страницу телеграма  ">
+                  <svg class="icon icon-social">
+                    <use xlink:href="img/design/symbol_sprite.svg#_insta"/>
+                  </svg>
+                </a>
+              </li>
+              <li class="contacts-block__social-item">
+                <a href="" class="contacts-block__social-link" aria-label="Переход на страницу телеграма  ">
+                  <svg class="icon icon-social icon-telegram">
+                    <use xlink:href="img/design/symbol_sprite.svg#_telegram"/>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <nav class="menu footer__menu">
+          <ul class="menu__list">
+            <li class="menu__item footer__list-item">
+              <a href="projects.html.html" class="menu__link footer__link">Проекты</a>
+            </li>
+            <li class="menu__item footer__list-item">
+              <a href="" class="menu__link footer__link">Акции</a>
+            </li>
+            <li class="menu__item footer__list-item">
+              <a href="blog.html" class="menu__link footer__link">Блог</a>
+            </li>
+            <li class="menu__item footer__list-item">
+              <a href="technology.html" class="menu__link footer__link">Технологии</a>
+            </li>
+            <li class="menu__item footer__list-item">
+              <a href="faq.html" class="menu__link footer__link">Частые вопросы</a>
+            </li>
+            <li class="menu__item footer__list-item">
+              <a href="about.html" class="menu__link footer__link">О компании</a>
+            </li>
+            <li class="menu__item footer__list-item">
+              <a href="contacts.html" class="menu__link footer__link">Контакты</a>
+            </li>
+            <li class="menu__item footer__list-item">
+              <a href="work-projects.html" class="menu__link footer__link">Проекты в работе</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="footer__list">
+          <li class="footer__list-item">Ремонт под ключ</li>
+          <li class="footer__list-item"><a href="card-repair.html" class="footer__link">Стандарт — от 9000 руб / м²</a></li>
+          <li class="footer__list-item"><a href="card-repair.html" class="footer__link">Комфорт — от 11 000 руб / м²</a></li>
+          <li class="footer__list-item"><a href="card-repair.html" class="footer__link">Бизнес — от 14 000 руб / м²</a></li>
+          <li class="footer__list-item"><a href="card-repair.html" class="footer__link">Ремонт санузлов</a></li>
+          <li class="footer__list-item"><a href="card-repair.html" class="footer__link">Косметический ремонт</a></li>
+        </ul>
+        <ul class="footer__list">
+          <li class="footer__list-item">Дизайн интерьера</li>
+          <li class="footer__list-item"><a href="card-design.html" class="footer__link">Дизайн-проект под ключ</a></li>
+          <li class="footer__list-item"><a href="card-design.html" class="footer__link">Базовый дизайн-проект</a></li>
+          <li class="footer__list-item"><a href="card-design.html" class="footer__link">3-D визуализация</a></li>
+          <li class="footer__list-item"><a href="card-design.html" class="footer__link">Авторский надзор</a></li>
+          <li class="footer__list-item"><a href="card-design.html" class="footer__link">Комплектация объекта</a></li>
+        </ul>
+      </div>
+  
+      <div class="footer__copy-wrap">
+        <div class="footer__copy">
+          <p class="footer__copy-txt">&copy; 2020, Эдэм. Ремонт и отделка квартир, коттеджей, офисов в Москве и МО</p>
+          <a href="" class="footer__copy-link">Политика конфиденциальности</a>
+        </div>
+      </div>
+  
+    </div>
+  </footer>
+  <div id="modal" class="modal">
+    <div class="modal__body">
+      <div class="modal__top">
+        <button class="close-btn close-btn--white modal__close" id="modal-close"></button>
+        <h3 class="modal__title">Заказать звонок</h3>
+        <p class="modal__subtitle">Мы свяжемся с Вами в ближайшее время.</p>
+      </div>
+  
+      <form action="modal.php" class="modal__form form">
+        <input class="input input--colored form__input" type="text" placeholder="Ваше имя" required>
+        <input class="input input--colored form__input" id="js-tel-mask" type="tel" placeholder="Телефон для связи" required>
+        <footer class="form__footer ">
+          <button class="btn btn--fill btn--fill-prim form__btn" type="submit">Отправить</button>
+          <p class="form__policy">Нажимая на кнопку «Записаться», вы соглашаетесь с нашей <a href="#" class="form__link">Политикой конфиденциальности</a></p>
+        </footer>
+      </form>
+    </div>
+  </div>
+  <script src="js/libs/swiper.min.js"></script>
+  <script src="js/libs/libs-common.min.js"></script>
+  <script src="js/common.min.js"></script>
+</body>
+</html>
